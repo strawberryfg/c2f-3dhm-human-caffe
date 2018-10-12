@@ -11,7 +11,7 @@ Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64)
 
 
 ----
-## Overview
+## Your briefing
 2-stage Hourglass (d1 = 1, d2 = 16/32/64) w/ batch size = 3 🌝 🌚 😈
 
 Exquisite ResNet w/ integral coming up soon.  💪
