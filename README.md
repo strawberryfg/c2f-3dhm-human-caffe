@@ -3,6 +3,7 @@ This is the caffe reimplementation of "Coarse-to-Fine Volumetric Prediction for 
 
 Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64) 
 
+
 ----
 ## Overture
 - I write C++ faster than Python
@@ -15,9 +16,7 @@ Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64)
 
 Exquisite ResNet w/ integral coming up soon. 
 
-2D heatmap ground truth renderer code borrowed from Simple Baseline (\emph{citation missing})
-
-3D heatmap ground truth renderer code closely follows C2F  
+See Guideline.pdf for detailed description.
 
 ----
 ## Prerequisites
