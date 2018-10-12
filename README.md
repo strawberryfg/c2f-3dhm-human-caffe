@@ -52,20 +52,20 @@ See Guideline.pdf for detailed description.
   
 ----
 ## Full test 
-- For full evaluation on H36M test set
-- d = 16
+For full evaluation on H36M test set
+- **d = 16**
   ```
   caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_560000.caffemodel -iterations 183000
   ```
   This will give you **73.6** mm (figs/test_d16_full.png)
   
-  d = 32
+  **d = 32**
   ```
   caffe test -model test_d32_statsfalse.prototxt -weights models/net_iter_640000.caffemodel -iterations 183000
   ```
   This will give you mm (figs/test_d32_full.png)
   
-  d = 64
+  **d = 64**
   ```
   caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_720929.caffemodel -iterations 183000
   ```
