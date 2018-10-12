@@ -6,4 +6,4 @@ Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64)
 ----
 ## Prerequisites
 - Ubuntu / Windows
-- 12 GB TITAN Card / 8 GB GTX 1070 (if you want to run on Alienware PC)
+- 12 GB TITAN Card / 8 GB GTX 1070 (if you want to run on Alienware PC😏)
