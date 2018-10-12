@@ -128,8 +128,9 @@ This sounds pretty sketchy, right? Another way to train this is simply train d1=
 
 ### Note:
 
-**1.** I set global stats to false during inference due to small batch size, cause otherwise you would get a totally different MPJPE number. I cannot recall the paper that mentions it. Let me find the paper.
-**2.** The major difference between prototxt is 
+- I set global stats to false during inference due to small batch size, cause otherwise you would get a totally different MPJPE number. I cannot recall the paper that mentions it. Let me find the paper.
+
+- The major difference between prototxt is 
 
    **a)** depth dimension param (Use sublime or notepad++ to search keywords "depth_dims")
    
