@@ -78,4 +78,6 @@ For full evaluation on H36M test set
   ```
   This will give you **73.6** mm (figs/test_d16_full.png)
 
-## 
+## Training
+
+Training is a bit tricky. Here's the thing:
