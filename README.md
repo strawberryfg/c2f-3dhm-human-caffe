@@ -1,7 +1,7 @@
 # c2f-3dhm-human-caffe
 This is the caffe reimplementation of "Coarse-to-Fine Volumetric Prediction for Single-Image 3D Human Pose". (\emph{citation})
 
-You can find screenshots of eval on test set in figs/ (**d = 16, 32, 64**). (Random or full test)
+You can find screenshots of eval on test set in figs/ (**d2 =  16, 32, 64**). (Random or full test)
 
 ----
 ## Overture
@@ -37,20 +37,20 @@ As you know, evaluation on the entire dataset takes time. For testing on a rando
 
 I should claim that this is just for fun, please do not not take it seriously. You might get, say, **68.2 mm** and **68.4 mm** in two different runs.
 
-- **d = 64**
+- **d2 =  64**
   ```
   cd testing
   caffe test -model test_d64_rand.prototxt -weights models/net_iter_720929.caffemodel -iterations 500
   ```
   This will give you **figs/rand_test_d64.png** (unstable number around **68 mm** due to small number of samples)
   
-- **d = 32**
+- **d2 =  32**
   ```
   caffe test -model test_d32_rand.prototxt -weights models/net_iter_640000.caffemodel -iterations 500
   ```
   This will give you **figs/rand_test_d32.png** (unstable number around **71 mm**)
   
-- **d = 16**
+- **d2 =  16**
   ```
   caffe test -model test_d16_rand.prototxt -weights models/net_iter_560000.caffemodel -iterations 500
   ```
@@ -61,7 +61,7 @@ I should claim that this is just for fun, please do not not take it seriously. Y
 ## Full test 
 For full evaluation on H36M test set
  
-- **d = 64**
+- **d2 =  64**
   ```
   cd testing
   caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_720929.caffemodel -iterations 183000
@@ -69,14 +69,14 @@ For full evaluation on H36M test set
   This will give you mm (**figs/test_d64_full.png**)
 
 
-- **d = 32**
+- **d2 =  32**
   ```
   caffe test -model test_d32_statsfalse.prototxt -weights models/net_iter_640000.caffemodel -iterations 183000
   ```
   This will give you **68.6 mm** (**figs/test_d32_full.png**)
  
   
-- **d = 16**
+- **d2 =  16**
   ```
   caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_560000.caffemodel -iterations 183000
   ```
@@ -86,38 +86,38 @@ For full evaluation on H36M test set
 
 Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's the thing:
 
-- I started with **d = 2** to warm up. Simply run 
+- I started with **d2 =  2** to warm up. Simply run 
   ```
   cd training 
   caffe train --solver=solver_d2.prototxt 
   ```
   I trained from scratch w/o MPII 2D HM pretraining, with **2.5e-5** as base_lr and **RMSProp**. 2 GPUs were used unless otherwise specified. Weight initialization is gaussian w/ **0.01 std**. Loss ratio of 3d HM to 2d HM is **0.1:1**.
   
-- **d = 4** Finetune weights from **d = 2** after convergence.
+- **d2 =  4** Finetune weights from **d2 =  2** after convergence.
   ```
   caffe train --solver=solver_d4.prototxt --snapshot=net_iter_XXX.solverstate 
   ```
   You will get around **137 mm** on train and **150 mm** on test. For eval on training set, simply uncomment **"index_lower_bound: 0" "index_upper_bound: 1559571"** of **"GenRandIndex"** layer. Loss ratio is **0.3:1**.
  
-- **d = 8** Finetune weights from **d = 4** after convergence.
+- **d2 =  8** Finetune weights from **d2 =  4** after convergence.
   ```
   caffe train --solver=solver_d8.prototxt --snapshot=net_iter_XXX.solverstate 
   ```
   You will get around **72 mm** on train and **86 mm** on test. Loss ratio is **0.1:1**.
-- **d = 16** Finetune weights from **d = 8** after convergence 
+- **d2 =  16** Finetune weights from **d2 =  8** after convergence 
   ```
   caffe train --solver=solver_d16.prototxt --snapshot=net_iter_XXX.solverstate 
   ```
   You will get around **47 mm** on train and **72 mm** on test. Loss ratio is **0.03:1**.
 
-- **d = 32** Finetune weights from **d = 16** after net_iter_560000.solverstate 
+- **d2 =  32** Finetune weights from **d2 =  16** after net_iter_560000.solverstate 
   ```
   caffe train --solver=solver_d32.prototxt --snapshot=net_iter_560000.solverstate 
   ```
   You will get around **39 mm** on train and **71 mm** on test. Loss ratio is **0.03:1**.
   I changed the weight initialization of 3D heatmap to normal distribution with **0.001 std** in place previous 0.01 as I found the MPJPE error did not slump.
   
-- **d = 64** Finetune weights from **d = 32** after net_iter_640000.solverstate 
+- **d2 =  64** Finetune weights from **d2 =  32** after net_iter_640000.solverstate 
   ```
   caffe train --solver=solver_d64.prototxt --snapshot=net_iter_640000.solverstate 
   ```
