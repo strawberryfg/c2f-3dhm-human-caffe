@@ -122,3 +122,12 @@ Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's th
   caffe train --solver=solver_d64.prototxt --snapshot=net_iter_640000.solverstate 
   ```
   You will get around **37 mm** on train and **68 mm** on test. Loss ratio is 0.03:1. I again changed weight initialization of 3D heatmap from 0.001 gaussian $\rightarrow$ 0.0003. 
+  
+This sounds pretty sketchy, right? Another way to train this is simply train d1=1,d2=64 from scratch. Details:
+\emph{missing, TO DO}
+
+**Notes: **
+1. I set global stats to false during inference due to small batch size. I cannot recall the paper that mentions it. Let me find the paper.
+2. The major difference between prototxt is 
+   a)
+   b)
