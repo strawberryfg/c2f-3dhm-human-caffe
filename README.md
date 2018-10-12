@@ -84,23 +84,35 @@ For full evaluation on H36M test set
 
 ## Training
 
-Training is a bit tricky. Here's the thing:
+Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's the thing:
 
 - I started with **d = 2** to warm up. Simply run 
   ```
   cd training 
   caffe train --solver=solver_d2.prototxt 
   ```
-  I trained from scratch w/o MPII 2D HM pretraining, with 2.5e-5 as base_lr and RMSProp. 2 GPUs were used unless otherwise specified.
+  I trained from scratch w/o MPII 2D HM pretraining, with 2.5e-5 as base_lr and RMSProp. 2 GPUs were used unless otherwise specified. Weight initialization is gaussian w/ 0.01 std. Loss ratio of 3d HM to 2d HM is 0.1:1
   
 - **d = 4** Finetune weights from **d = 2** after convergence.
   ```
   caffe train --solver=solver_d4.prototxt --snapshot=net_iter_XXX.solverstate 
   ```
-  You will get around **137 mm** on train and **150 mm** on test. For eval on training set, simply uncomment **"index_lower_bound: 0" "index_upper_bound: 1559571"** of **"GenRandIndex"** layer.
+  You will get around **137 mm** on train and **150 mm** on test. For eval on training set, simply uncomment **"index_lower_bound: 0" "index_upper_bound: 1559571"** of **"GenRandIndex"** layer. Loss ratio of 3d HM to 2d HM is 0.3:1
  
 - **d = 8** Finetune weights from **d = 4** after convergence.
   ```
   caffe train --solver=solver_d8.prototxt --snapshot=net_iter_XXX.solverstate 
   ```
-  You will get around **72 mm** on train and **86 mm** on test.
+  You will get around **72 mm** on train and **86 mm** on test. Loss ratio 0.1:1.
+- **d = 16** Finetune weights from **d = 8** after convergence 
+  ```
+  caffe train --solver=solver_d16.prototxt --snapshot=net_iter_XXX.solverstate 
+  ```
+  You will get around **47 mm** on train and **72 mm** on test. Loss ratio 0.03:1.
+
+- **d = 32** Finetune weights from **d = 16** after net_iter_560000.solverstate 
+  ```
+  caffe train --solver=solver_d32.prototxt --snapshot=net_iter_560000.solverstate 
+  ```
+  You will get around **39 mm** on train and **71 mm** on test. Loss ratio 0.03:1.
+  I changed the weight initialization of 3D heatmap to normal distribution with 0.001 std in place previous 0.01 as I found the MPJPE error did not slump.

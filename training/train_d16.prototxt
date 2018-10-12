@@ -52,7 +52,7 @@ layer {
   top: "bbx_H36M"
   read_blob_from_file_indexing_param {
      file_prefix: "/data/wqf/h36m/mine/Human3.6M/bbx_all_new/"
-	 num_to_read: 4
+   num_to_read: 4
   }
 
  }
@@ -68,9 +68,9 @@ layer {
  top: "bbx_y2_H36M"
  slice_param {
     axis: 1
-	slice_point: 1
-	slice_point: 2
-	slice_point: 3
+  slice_point: 1
+  slice_point: 2
+  slice_point: 3
  }
 }
 
@@ -348,7 +348,7 @@ layer {
   top: "label_3dhm"
   type: "DeepHumanModelGen3DHeatmapInMoreDetailV3"
   deep_human_model_gen_3d_heatmap_in_more_detail_v3_param {
-    depth_dims: 8
+    depth_dims: 16
   map_size: 64
   crop_size: 256
 
@@ -375,12 +375,12 @@ layer {
  bottom: "image"
  top: "conv_1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 64
@@ -516,12 +516,12 @@ layer {
  bottom: "residual_1_branch1_relu1" 
  top: "residual_1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 64
@@ -600,12 +600,12 @@ layer {
  bottom: "residual_1_branch1_relu2" 
  top: "residual_1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 64
@@ -684,12 +684,12 @@ layer {
  bottom: "residual_1_branch1_relu3" 
  top: "residual_1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -711,12 +711,12 @@ layer {
  bottom: "scale_1" 
  top: "residual_1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -816,12 +816,12 @@ layer {
  bottom: "residual_2_branch1_relu1" 
  top: "residual_2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 64
@@ -900,12 +900,12 @@ layer {
  bottom: "residual_2_branch1_relu2" 
  top: "residual_2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 64
@@ -984,12 +984,12 @@ layer {
  bottom: "residual_2_branch1_relu3" 
  top: "residual_2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -1011,12 +1011,12 @@ layer {
  bottom: "pooling" 
  top: "residual_2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -1105,12 +1105,12 @@ layer {
  bottom: "residual_3_branch1_relu1" 
  top: "residual_3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 64
@@ -1189,12 +1189,12 @@ layer {
  bottom: "residual_3_branch1_relu2" 
  top: "residual_3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 64
@@ -1273,12 +1273,12 @@ layer {
  bottom: "residual_3_branch1_relu3" 
  top: "residual_3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -1300,12 +1300,12 @@ layer {
  bottom: "residual_2" 
  top: "residual_3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -1394,12 +1394,12 @@ layer {
  bottom: "residual_4_branch1_relu1" 
  top: "residual_4_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -1478,12 +1478,12 @@ layer {
  bottom: "residual_4_branch1_relu2" 
  top: "residual_4_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -1562,12 +1562,12 @@ layer {
  bottom: "residual_4_branch1_relu3" 
  top: "residual_4_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -1589,12 +1589,12 @@ layer {
  bottom: "residual_3" 
  top: "residual_4_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -1694,12 +1694,12 @@ layer {
  bottom: "hourglass1_branch1_res1_branch1_sub1_relu1" 
  top: "hourglass1_branch1_res1_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -1778,12 +1778,12 @@ layer {
  bottom: "hourglass1_branch1_res1_branch1_sub1_relu2" 
  top: "hourglass1_branch1_res1_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -1862,12 +1862,12 @@ layer {
  bottom: "hourglass1_branch1_res1_branch1_sub1_relu3" 
  top: "hourglass1_branch1_res1_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -1946,12 +1946,12 @@ layer {
  bottom: "hourglass1_branch1_res1_branch1_sub2_relu1" 
  top: "hourglass1_branch1_res1_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -2030,12 +2030,12 @@ layer {
  bottom: "hourglass1_branch1_res1_branch1_sub2_relu2" 
  top: "hourglass1_branch1_res1_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -2067,12 +2067,12 @@ layer {
  bottom: "hourglass1_branch1_res1_branch1_concat" 
  top: "hourglass1_branch1_res1_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -2145,12 +2145,12 @@ layer {
  bottom: "hourglass1_pooling" 
  top: "hourglass1_branch1_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -2239,12 +2239,12 @@ layer {
  bottom: "hourglass1_branch1_res2_branch1_sub1_relu1" 
  top: "hourglass1_branch1_res2_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -2323,12 +2323,12 @@ layer {
  bottom: "hourglass1_branch1_res2_branch1_sub1_relu2" 
  top: "hourglass1_branch1_res2_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -2407,12 +2407,12 @@ layer {
  bottom: "hourglass1_branch1_res2_branch1_sub1_relu3" 
  top: "hourglass1_branch1_res2_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -2491,12 +2491,12 @@ layer {
  bottom: "hourglass1_branch1_res2_branch1_sub2_relu1" 
  top: "hourglass1_branch1_res2_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -2575,12 +2575,12 @@ layer {
  bottom: "hourglass1_branch1_res2_branch1_sub2_relu2" 
  top: "hourglass1_branch1_res2_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -2612,12 +2612,12 @@ layer {
  bottom: "hourglass1_branch1_res2_branch1_concat" 
  top: "hourglass1_branch1_res2_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -2690,12 +2690,12 @@ layer {
  bottom: "hourglass1_branch1_res1" 
  top: "hourglass1_branch1_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -2784,12 +2784,12 @@ layer {
  bottom: "hourglass1_branch1_res3_branch1_sub1_relu1" 
  top: "hourglass1_branch1_res3_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -2868,12 +2868,12 @@ layer {
  bottom: "hourglass1_branch1_res3_branch1_sub1_relu2" 
  top: "hourglass1_branch1_res3_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -2952,12 +2952,12 @@ layer {
  bottom: "hourglass1_branch1_res3_branch1_sub1_relu3" 
  top: "hourglass1_branch1_res3_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -3036,12 +3036,12 @@ layer {
  bottom: "hourglass1_branch1_res3_branch1_sub2_relu1" 
  top: "hourglass1_branch1_res3_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -3120,12 +3120,12 @@ layer {
  bottom: "hourglass1_branch1_res3_branch1_sub2_relu2" 
  top: "hourglass1_branch1_res3_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -3157,12 +3157,12 @@ layer {
  bottom: "hourglass1_branch1_res3_branch1_concat" 
  top: "hourglass1_branch1_res3_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -3235,12 +3235,12 @@ layer {
  bottom: "hourglass1_branch1_res2" 
  top: "hourglass1_branch1_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -3340,12 +3340,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res1_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -3424,12 +3424,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res1_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -3508,12 +3508,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res1_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -3535,12 +3535,12 @@ layer {
  bottom: "hourglass1_branch1_level4_pooling" 
  top: "hourglass1_branch1_level4_branch1_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -3629,12 +3629,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res2_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -3713,12 +3713,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res2_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -3797,12 +3797,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res2_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -3824,12 +3824,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res1" 
  top: "hourglass1_branch1_level4_branch1_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -3918,12 +3918,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res3_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -4002,12 +4002,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res3_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -4086,12 +4086,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res3_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -4113,12 +4113,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res2" 
  top: "hourglass1_branch1_level4_branch1_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -4218,12 +4218,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res1_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -4302,12 +4302,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res1_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -4386,12 +4386,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res1_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -4413,12 +4413,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_pooling" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -4507,12 +4507,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res2_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -4591,12 +4591,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res2_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -4675,12 +4675,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res2_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -4702,12 +4702,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -4796,12 +4796,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res3_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -4880,12 +4880,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res3_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -4964,12 +4964,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res3_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -4991,12 +4991,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -5096,12 +5096,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -5180,12 +5180,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -5264,12 +5264,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -5291,12 +5291,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_pooling" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -5385,12 +5385,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -5469,12 +5469,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -5553,12 +5553,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -5580,12 +5580,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -5674,12 +5674,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -5758,12 +5758,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -5842,12 +5842,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -5869,12 +5869,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -5963,12 +5963,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -6047,12 +6047,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -6131,12 +6131,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -6158,12 +6158,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -6252,12 +6252,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -6336,12 +6336,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -6420,12 +6420,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -6447,12 +6447,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_level1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -6493,8 +6493,8 @@ layer {
  bias_term: false
  }
  param {
- 	 lr_mult: 0
- 	 decay_mult: 0
+   lr_mult: 0
+   decay_mult: 0
  }
  }
 layer {
@@ -6560,12 +6560,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -6644,12 +6644,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -6728,12 +6728,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -6755,12 +6755,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -6849,12 +6849,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -6933,12 +6933,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -7017,12 +7017,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -7044,12 +7044,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -7138,12 +7138,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -7222,12 +7222,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -7306,12 +7306,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -7333,12 +7333,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -7437,12 +7437,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res5_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res5_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -7521,12 +7521,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res5_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res5_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -7605,12 +7605,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_res5_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res5_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -7632,12 +7632,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch1_level2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch1_res5_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -7678,8 +7678,8 @@ layer {
  bias_term: false
  }
  param {
- 	 lr_mult: 0
- 	 decay_mult: 0
+   lr_mult: 0
+   decay_mult: 0
  }
  }
 layer {
@@ -7745,12 +7745,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res1_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -7829,12 +7829,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res1_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -7913,12 +7913,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res1_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -7940,12 +7940,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -8034,12 +8034,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res2_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -8118,12 +8118,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res2_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -8202,12 +8202,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res2_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -8229,12 +8229,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -8323,12 +8323,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res3_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -8407,12 +8407,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res3_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -8491,12 +8491,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res3_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -8518,12 +8518,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3_branch2_res2" 
  top: "hourglass1_branch1_level4_branch1_level3_branch2_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -8622,12 +8622,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res5_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch1_res5_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -8706,12 +8706,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res5_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch1_res5_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -8790,12 +8790,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_res5_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch1_res5_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -8817,12 +8817,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch1_level3" 
  top: "hourglass1_branch1_level4_branch1_res5_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -8863,8 +8863,8 @@ layer {
  bias_term: false
  }
  param {
- 	 lr_mult: 0
- 	 decay_mult: 0
+   lr_mult: 0
+   decay_mult: 0
  }
  }
 layer {
@@ -8930,12 +8930,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res1_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch2_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -9014,12 +9014,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res1_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch2_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -9098,12 +9098,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res1_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch2_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -9125,12 +9125,12 @@ layer {
  bottom: "hourglass1_branch1_res3" 
  top: "hourglass1_branch1_level4_branch2_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -9219,12 +9219,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res2_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch2_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -9303,12 +9303,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res2_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch2_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -9387,12 +9387,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res2_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch2_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -9414,12 +9414,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res1" 
  top: "hourglass1_branch1_level4_branch2_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -9508,12 +9508,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res3_branch1_relu1" 
  top: "hourglass1_branch1_level4_branch2_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -9592,12 +9592,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res3_branch1_relu2" 
  top: "hourglass1_branch1_level4_branch2_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -9676,12 +9676,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res3_branch1_relu3" 
  top: "hourglass1_branch1_level4_branch2_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -9703,12 +9703,12 @@ layer {
  bottom: "hourglass1_branch1_level4_branch2_res2" 
  top: "hourglass1_branch1_level4_branch2_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -9807,12 +9807,12 @@ layer {
  bottom: "hourglass1_branch1_res5_branch1_sub1_relu1" 
  top: "hourglass1_branch1_res5_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -9891,12 +9891,12 @@ layer {
  bottom: "hourglass1_branch1_res5_branch1_sub1_relu2" 
  top: "hourglass1_branch1_res5_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -9975,12 +9975,12 @@ layer {
  bottom: "hourglass1_branch1_res5_branch1_sub1_relu3" 
  top: "hourglass1_branch1_res5_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -10059,12 +10059,12 @@ layer {
  bottom: "hourglass1_branch1_res5_branch1_sub2_relu1" 
  top: "hourglass1_branch1_res5_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -10143,12 +10143,12 @@ layer {
  bottom: "hourglass1_branch1_res5_branch1_sub2_relu2" 
  top: "hourglass1_branch1_res5_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -10180,12 +10180,12 @@ layer {
  bottom: "hourglass1_branch1_res5_branch1_concat" 
  top: "hourglass1_branch1_res5_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -10258,12 +10258,12 @@ layer {
  bottom: "hourglass1_branch1_level4" 
  top: "hourglass1_branch1_res5_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -10304,8 +10304,8 @@ layer {
  bias_term: false
  }
  param {
- 	 lr_mult: 0
- 	 decay_mult: 0
+   lr_mult: 0
+   decay_mult: 0
  }
  }
 layer {
@@ -10371,12 +10371,12 @@ layer {
  bottom: "hourglass1_branch2_res1_branch1_sub1_relu1" 
  top: "hourglass1_branch2_res1_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -10455,12 +10455,12 @@ layer {
  bottom: "hourglass1_branch2_res1_branch1_sub1_relu2" 
  top: "hourglass1_branch2_res1_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -10539,12 +10539,12 @@ layer {
  bottom: "hourglass1_branch2_res1_branch1_sub1_relu3" 
  top: "hourglass1_branch2_res1_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -10623,12 +10623,12 @@ layer {
  bottom: "hourglass1_branch2_res1_branch1_sub2_relu1" 
  top: "hourglass1_branch2_res1_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -10707,12 +10707,12 @@ layer {
  bottom: "hourglass1_branch2_res1_branch1_sub2_relu2" 
  top: "hourglass1_branch2_res1_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -10744,12 +10744,12 @@ layer {
  bottom: "hourglass1_branch2_res1_branch1_concat" 
  top: "hourglass1_branch2_res1_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -10822,12 +10822,12 @@ layer {
  bottom: "residual_4" 
  top: "hourglass1_branch2_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -10916,12 +10916,12 @@ layer {
  bottom: "hourglass1_branch2_res2_branch1_sub1_relu1" 
  top: "hourglass1_branch2_res2_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -11000,12 +11000,12 @@ layer {
  bottom: "hourglass1_branch2_res2_branch1_sub1_relu2" 
  top: "hourglass1_branch2_res2_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -11084,12 +11084,12 @@ layer {
  bottom: "hourglass1_branch2_res2_branch1_sub1_relu3" 
  top: "hourglass1_branch2_res2_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -11168,12 +11168,12 @@ layer {
  bottom: "hourglass1_branch2_res2_branch1_sub2_relu1" 
  top: "hourglass1_branch2_res2_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -11252,12 +11252,12 @@ layer {
  bottom: "hourglass1_branch2_res2_branch1_sub2_relu2" 
  top: "hourglass1_branch2_res2_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -11289,12 +11289,12 @@ layer {
  bottom: "hourglass1_branch2_res2_branch1_concat" 
  top: "hourglass1_branch2_res2_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -11367,12 +11367,12 @@ layer {
  bottom: "hourglass1_branch2_res1" 
  top: "hourglass1_branch2_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -11461,12 +11461,12 @@ layer {
  bottom: "hourglass1_branch2_res3_branch1_sub1_relu1" 
  top: "hourglass1_branch2_res3_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -11545,12 +11545,12 @@ layer {
  bottom: "hourglass1_branch2_res3_branch1_sub1_relu2" 
  top: "hourglass1_branch2_res3_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -11629,12 +11629,12 @@ layer {
  bottom: "hourglass1_branch2_res3_branch1_sub1_relu3" 
  top: "hourglass1_branch2_res3_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -11713,12 +11713,12 @@ layer {
  bottom: "hourglass1_branch2_res3_branch1_sub2_relu1" 
  top: "hourglass1_branch2_res3_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -11797,12 +11797,12 @@ layer {
  bottom: "hourglass1_branch2_res3_branch1_sub2_relu2" 
  top: "hourglass1_branch2_res3_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -11834,12 +11834,12 @@ layer {
  bottom: "hourglass1_branch2_res3_branch1_concat" 
  top: "hourglass1_branch2_res3_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -11912,12 +11912,12 @@ layer {
  bottom: "hourglass1_branch2_res2" 
  top: "hourglass1_branch2_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -11959,12 +11959,12 @@ layer {
  bottom: "hourglass1" 
  top: "fc_1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -11986,12 +11986,12 @@ layer {
  bottom: "fc_1" 
  top: "fc_2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -12013,12 +12013,12 @@ layer {
  bottom: "fc_2" 
  top: "heatmap" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 16
@@ -12052,12 +12052,12 @@ layer {
  bottom: "heatmap" 
  top: "conv_3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 384
@@ -12089,12 +12089,12 @@ layer {
  bottom: "concat_1" 
  top: "conv_4" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 384
@@ -12194,12 +12194,12 @@ layer {
  bottom: "hourglass2_branch1_res1_branch1_sub1_relu1" 
  top: "hourglass2_branch1_res1_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -12278,12 +12278,12 @@ layer {
  bottom: "hourglass2_branch1_res1_branch1_sub1_relu2" 
  top: "hourglass2_branch1_res1_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -12362,12 +12362,12 @@ layer {
  bottom: "hourglass2_branch1_res1_branch1_sub1_relu3" 
  top: "hourglass2_branch1_res1_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -12446,12 +12446,12 @@ layer {
  bottom: "hourglass2_branch1_res1_branch1_sub2_relu1" 
  top: "hourglass2_branch1_res1_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -12530,12 +12530,12 @@ layer {
  bottom: "hourglass2_branch1_res1_branch1_sub2_relu2" 
  top: "hourglass2_branch1_res1_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -12567,12 +12567,12 @@ layer {
  bottom: "hourglass2_branch1_res1_branch1_concat" 
  top: "hourglass2_branch1_res1_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -12645,12 +12645,12 @@ layer {
  bottom: "hourglass2_pooling" 
  top: "hourglass2_branch1_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -12739,12 +12739,12 @@ layer {
  bottom: "hourglass2_branch1_res2_branch1_sub1_relu1" 
  top: "hourglass2_branch1_res2_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -12823,12 +12823,12 @@ layer {
  bottom: "hourglass2_branch1_res2_branch1_sub1_relu2" 
  top: "hourglass2_branch1_res2_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -12907,12 +12907,12 @@ layer {
  bottom: "hourglass2_branch1_res2_branch1_sub1_relu3" 
  top: "hourglass2_branch1_res2_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -12991,12 +12991,12 @@ layer {
  bottom: "hourglass2_branch1_res2_branch1_sub2_relu1" 
  top: "hourglass2_branch1_res2_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -13075,12 +13075,12 @@ layer {
  bottom: "hourglass2_branch1_res2_branch1_sub2_relu2" 
  top: "hourglass2_branch1_res2_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -13112,12 +13112,12 @@ layer {
  bottom: "hourglass2_branch1_res2_branch1_concat" 
  top: "hourglass2_branch1_res2_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -13190,12 +13190,12 @@ layer {
  bottom: "hourglass2_branch1_res1" 
  top: "hourglass2_branch1_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -13284,12 +13284,12 @@ layer {
  bottom: "hourglass2_branch1_res3_branch1_sub1_relu1" 
  top: "hourglass2_branch1_res3_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -13368,12 +13368,12 @@ layer {
  bottom: "hourglass2_branch1_res3_branch1_sub1_relu2" 
  top: "hourglass2_branch1_res3_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -13452,12 +13452,12 @@ layer {
  bottom: "hourglass2_branch1_res3_branch1_sub1_relu3" 
  top: "hourglass2_branch1_res3_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -13536,12 +13536,12 @@ layer {
  bottom: "hourglass2_branch1_res3_branch1_sub2_relu1" 
  top: "hourglass2_branch1_res3_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -13620,12 +13620,12 @@ layer {
  bottom: "hourglass2_branch1_res3_branch1_sub2_relu2" 
  top: "hourglass2_branch1_res3_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -13657,12 +13657,12 @@ layer {
  bottom: "hourglass2_branch1_res3_branch1_concat" 
  top: "hourglass2_branch1_res3_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -13735,12 +13735,12 @@ layer {
  bottom: "hourglass2_branch1_res2" 
  top: "hourglass2_branch1_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -13840,12 +13840,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res1_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -13924,12 +13924,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res1_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -14008,12 +14008,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res1_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -14035,12 +14035,12 @@ layer {
  bottom: "hourglass2_branch1_level4_pooling" 
  top: "hourglass2_branch1_level4_branch1_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -14129,12 +14129,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res2_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -14213,12 +14213,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res2_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -14297,12 +14297,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res2_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -14324,12 +14324,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res1" 
  top: "hourglass2_branch1_level4_branch1_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -14418,12 +14418,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res3_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -14502,12 +14502,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res3_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -14586,12 +14586,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res3_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -14613,12 +14613,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res2" 
  top: "hourglass2_branch1_level4_branch1_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -14718,12 +14718,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res1_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -14802,12 +14802,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res1_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -14886,12 +14886,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res1_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -14913,12 +14913,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_pooling" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -15007,12 +15007,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res2_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -15091,12 +15091,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res2_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -15175,12 +15175,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res2_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -15202,12 +15202,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -15296,12 +15296,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res3_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -15380,12 +15380,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res3_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -15464,12 +15464,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res3_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -15491,12 +15491,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -15596,12 +15596,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -15680,12 +15680,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -15764,12 +15764,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -15791,12 +15791,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_pooling" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -15885,12 +15885,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -15969,12 +15969,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -16053,12 +16053,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -16080,12 +16080,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -16174,12 +16174,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -16258,12 +16258,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -16342,12 +16342,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -16369,12 +16369,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -16463,12 +16463,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -16547,12 +16547,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -16631,12 +16631,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -16658,12 +16658,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_level1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -16752,12 +16752,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -16836,12 +16836,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -16920,12 +16920,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -16947,12 +16947,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_level1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch1_res5_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -16993,8 +16993,8 @@ layer {
  bias_term: false
  }
  param {
- 	 lr_mult: 0
- 	 decay_mult: 0
+   lr_mult: 0
+   decay_mult: 0
  }
  }
 layer {
@@ -17060,12 +17060,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -17144,12 +17144,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -17228,12 +17228,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -17255,12 +17255,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -17349,12 +17349,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -17433,12 +17433,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -17517,12 +17517,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -17544,12 +17544,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -17638,12 +17638,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -17722,12 +17722,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -17806,12 +17806,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -17833,12 +17833,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_level2_branch2_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -17937,12 +17937,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res5_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res5_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -18021,12 +18021,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res5_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res5_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -18105,12 +18105,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_res5_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res5_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -18132,12 +18132,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch1_level2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch1_res5_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -18178,8 +18178,8 @@ layer {
  bias_term: false
  }
  param {
- 	 lr_mult: 0
- 	 decay_mult: 0
+   lr_mult: 0
+   decay_mult: 0
  }
  }
 layer {
@@ -18245,12 +18245,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res1_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -18329,12 +18329,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res1_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -18413,12 +18413,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res1_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -18440,12 +18440,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -18534,12 +18534,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res2_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -18618,12 +18618,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res2_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -18702,12 +18702,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res2_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -18729,12 +18729,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -18823,12 +18823,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res3_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -18907,12 +18907,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res3_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -18991,12 +18991,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res3_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -19018,12 +19018,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3_branch2_res2" 
  top: "hourglass2_branch1_level4_branch1_level3_branch2_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -19122,12 +19122,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res5_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch1_res5_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -19206,12 +19206,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res5_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch1_res5_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -19290,12 +19290,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_res5_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch1_res5_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -19317,12 +19317,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch1_level3" 
  top: "hourglass2_branch1_level4_branch1_res5_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -19363,8 +19363,8 @@ layer {
  bias_term: false
  }
  param {
- 	 lr_mult: 0
- 	 decay_mult: 0
+   lr_mult: 0
+   decay_mult: 0
  }
  }
 layer {
@@ -19430,12 +19430,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res1_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch2_res1_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -19514,12 +19514,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res1_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch2_res1_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -19598,12 +19598,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res1_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch2_res1_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -19625,12 +19625,12 @@ layer {
  bottom: "hourglass2_branch1_res3" 
  top: "hourglass2_branch1_level4_branch2_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -19719,12 +19719,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res2_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch2_res2_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -19803,12 +19803,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res2_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch2_res2_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -19887,12 +19887,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res2_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch2_res2_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -19914,12 +19914,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res1" 
  top: "hourglass2_branch1_level4_branch2_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -20008,12 +20008,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res3_branch1_relu1" 
  top: "hourglass2_branch1_level4_branch2_res3_branch1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -20092,12 +20092,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res3_branch1_relu2" 
  top: "hourglass2_branch1_level4_branch2_res3_branch1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -20176,12 +20176,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res3_branch1_relu3" 
  top: "hourglass2_branch1_level4_branch2_res3_branch1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -20203,12 +20203,12 @@ layer {
  bottom: "hourglass2_branch1_level4_branch2_res2" 
  top: "hourglass2_branch1_level4_branch2_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -20307,12 +20307,12 @@ layer {
  bottom: "hourglass2_branch1_res5_branch1_sub1_relu1" 
  top: "hourglass2_branch1_res5_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -20391,12 +20391,12 @@ layer {
  bottom: "hourglass2_branch1_res5_branch1_sub1_relu2" 
  top: "hourglass2_branch1_res5_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -20475,12 +20475,12 @@ layer {
  bottom: "hourglass2_branch1_res5_branch1_sub1_relu3" 
  top: "hourglass2_branch1_res5_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -20559,12 +20559,12 @@ layer {
  bottom: "hourglass2_branch1_res5_branch1_sub2_relu1" 
  top: "hourglass2_branch1_res5_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -20643,12 +20643,12 @@ layer {
  bottom: "hourglass2_branch1_res5_branch1_sub2_relu2" 
  top: "hourglass2_branch1_res5_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -20680,12 +20680,12 @@ layer {
  bottom: "hourglass2_branch1_res5_branch1_concat" 
  top: "hourglass2_branch1_res5_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -20758,12 +20758,12 @@ layer {
  bottom: "hourglass2_branch1_level4" 
  top: "hourglass2_branch1_res5_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -20804,8 +20804,8 @@ layer {
  bias_term: false
  }
  param {
- 	 lr_mult: 0
- 	 decay_mult: 0
+   lr_mult: 0
+   decay_mult: 0
  }
  }
 layer {
@@ -20871,12 +20871,12 @@ layer {
  bottom: "hourglass2_branch2_res1_branch1_sub1_relu1" 
  top: "hourglass2_branch2_res1_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -20955,12 +20955,12 @@ layer {
  bottom: "hourglass2_branch2_res1_branch1_sub1_relu2" 
  top: "hourglass2_branch2_res1_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -21039,12 +21039,12 @@ layer {
  bottom: "hourglass2_branch2_res1_branch1_sub1_relu3" 
  top: "hourglass2_branch2_res1_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -21123,12 +21123,12 @@ layer {
  bottom: "hourglass2_branch2_res1_branch1_sub2_relu1" 
  top: "hourglass2_branch2_res1_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -21207,12 +21207,12 @@ layer {
  bottom: "hourglass2_branch2_res1_branch1_sub2_relu2" 
  top: "hourglass2_branch2_res1_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -21244,12 +21244,12 @@ layer {
  bottom: "hourglass2_branch2_res1_branch1_concat" 
  top: "hourglass2_branch2_res1_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -21322,12 +21322,12 @@ layer {
  bottom: "eltwise" 
  top: "hourglass2_branch2_res1_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -21416,12 +21416,12 @@ layer {
  bottom: "hourglass2_branch2_res2_branch1_sub1_relu1" 
  top: "hourglass2_branch2_res2_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -21500,12 +21500,12 @@ layer {
  bottom: "hourglass2_branch2_res2_branch1_sub1_relu2" 
  top: "hourglass2_branch2_res2_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -21584,12 +21584,12 @@ layer {
  bottom: "hourglass2_branch2_res2_branch1_sub1_relu3" 
  top: "hourglass2_branch2_res2_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -21668,12 +21668,12 @@ layer {
  bottom: "hourglass2_branch2_res2_branch1_sub2_relu1" 
  top: "hourglass2_branch2_res2_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -21752,12 +21752,12 @@ layer {
  bottom: "hourglass2_branch2_res2_branch1_sub2_relu2" 
  top: "hourglass2_branch2_res2_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 128
@@ -21789,12 +21789,12 @@ layer {
  bottom: "hourglass2_branch2_res2_branch1_concat" 
  top: "hourglass2_branch2_res2_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -21867,12 +21867,12 @@ layer {
  bottom: "hourglass2_branch2_res1" 
  top: "hourglass2_branch2_res2_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -21961,12 +21961,12 @@ layer {
  bottom: "hourglass2_branch2_res3_branch1_sub1_relu1" 
  top: "hourglass2_branch2_res3_branch1_sub1_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -22045,12 +22045,12 @@ layer {
  bottom: "hourglass2_branch2_res3_branch1_sub1_relu2" 
  top: "hourglass2_branch2_res3_branch1_sub1_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -22129,12 +22129,12 @@ layer {
  bottom: "hourglass2_branch2_res3_branch1_sub1_relu3" 
  top: "hourglass2_branch2_res3_branch1_sub1_conv3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -22213,12 +22213,12 @@ layer {
  bottom: "hourglass2_branch2_res3_branch1_sub2_relu1" 
  top: "hourglass2_branch2_res3_branch1_sub2_conv1" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -22297,12 +22297,12 @@ layer {
  bottom: "hourglass2_branch2_res3_branch1_sub2_relu2" 
  top: "hourglass2_branch2_res3_branch1_sub2_conv2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -22334,12 +22334,12 @@ layer {
  bottom: "hourglass2_branch2_res3_branch1_concat" 
  top: "hourglass2_branch2_res3_branch1_conv_linear" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -22412,12 +22412,12 @@ layer {
  bottom: "hourglass2_branch2_res2" 
  top: "hourglass2_branch2_res3_branch2_conv" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -22459,12 +22459,12 @@ layer {
  bottom: "hourglass2" 
  top: "fc_3" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 512
@@ -22486,12 +22486,12 @@ layer {
  bottom: "fc_3" 
  top: "fc_4" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
  num_output: 256
@@ -22508,20 +22508,20 @@ layer {
  }
  }
 layer {
- name: "conv_5_d8"
+ name: "conv_5_d16"
  type: "Convolution" 
  bottom: "fc_4" 
  top: "heatmap2" 
   param {
- 	 lr_mult: 1
- 	 decay_mult: 1
+   lr_mult: 1
+   decay_mult: 1
  }
  param {
- 	 lr_mult: 2
- 	 decay_mult: 0
+   lr_mult: 2
+   decay_mult: 0
  }
  convolution_param { 
- num_output: 128
+ num_output: 256
  pad: 0
  kernel_size: 1
  stride:1
@@ -22595,21 +22595,21 @@ layer {
 }
 
 layer {
-	bottom: "pred_joint_2d_s1_int"
-	bottom: "crop_gt_joint_2d"
-	top: "joint2dloss_s1_int"
-	name: "joint2dloss_s1_int"
-	type: "EuclideanLoss"
-	loss_weight: 0.0
+  bottom: "pred_joint_2d_s1_int"
+  bottom: "crop_gt_joint_2d"
+  top: "joint2dloss_s1_int"
+  name: "joint2dloss_s1_int"
+  type: "EuclideanLoss"
+  loss_weight: 0.0
 }
 
 layer {
-	bottom: "pred_joint_2d_s1_max"
-	bottom: "crop_gt_joint_2d"
-	top: "joint2dloss_s1_max"
-	name: "joint2dloss_s1_max"
-	type: "EuclideanLoss"
-	loss_weight: 0.0
+  bottom: "pred_joint_2d_s1_max"
+  bottom: "crop_gt_joint_2d"
+  top: "joint2dloss_s1_max"
+  name: "joint2dloss_s1_max"
+  type: "EuclideanLoss"
+  loss_weight: 0.0
 }
 
 
@@ -22645,7 +22645,7 @@ layer {
   reshape_param {
     shape {
        dim: 0
-       dim: 128
+       dim: 256
        dim: 64
        dim: 64
     }
@@ -22660,7 +22660,7 @@ layer {
   name: "heatmap2_norm"
   deep_human_model_softmax_3d_hm_param {
       joint_num: 16
-      depth_dims: 8
+      depth_dims: 16
      
   }
 }
@@ -22690,21 +22690,21 @@ layer {
   type: "Slice"
   slice_param {
      axis: 1   
-   slice_point: 8
    slice_point: 16
-   slice_point: 24
    slice_point: 32
-   slice_point: 40
    slice_point: 48
-   slice_point: 56
    slice_point: 64
-   slice_point: 72
    slice_point: 80
-   slice_point: 88
    slice_point: 96
-   slice_point: 104
    slice_point: 112
-   slice_point: 120
+   slice_point: 128
+   slice_point: 144
+   slice_point: 160
+   slice_point: 176
+   slice_point: 192
+   slice_point: 208
+   slice_point: 224
+   slice_point: 240
    
   }
 }
@@ -23845,7 +23845,7 @@ layer {
   top: "pred_joint_3d_s2_max"
   name: "pred_joint_3d_s2_max"
   deep_human_model_h36m_cha_gen_joint_fr_xyz_heatmap_param {
-     depth_dims: 8
+     depth_dims: 16
      map_size: 64
      x_lb: 0.0
      x_ub: 1.0
@@ -24196,7 +24196,8 @@ layer {
  bottom: "heatmap2" 
  top: "loss_3dhm" 
  bottom: "label_3dhm"
- loss_weight: 0.1
+ loss_weight: 0.03
+ #loss_weight: 0.1 (d=8)
  #loss_weight: 0.3 (d=4)
  #loss_weight: 0.1 (d=2)
  #loss_weight: 1.0 (d=1)
