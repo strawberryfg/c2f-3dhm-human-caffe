@@ -31,6 +31,15 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 - Download preprocessed data at ... See "Data" section in Guideline.pdf.
 - Download pretrained model and snapshots at ...
 
+## Trained models/net_iter_560000## Main Results
+Train on CHALL_H80K train, evaluate on CHALL_H80K val.
+
+|Model        |d2   |  MPJPE(mm)  | Caffe Model  |
+|:-:|:-:|:-:|:-:|
+|SE-BN-Inception| 64 |  | [GoogleDrive](https://drive.google.com/file/d/0BwHV3BlNKkWlTWRRbDZYbVB2WWc/view?usp=sharing) | 
+
+
+
 ----
 ## Kick off the testing
 As you know, evaluation on the entire dataset takes time. For testing on a random subset, I implemented a random index generation layer. See screenshot **"figs/test_d64_rand.png"**, **"figs/test_d32_rand.png"**, **"figs/test_d16_rand.png"** for details.
