@@ -31,12 +31,12 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 - Download preprocessed data at ... See "Data" section in Guideline.pdf.
 - Download pretrained model and snapshots at ...
 
-## Trained models/net_iter_560000## Main Results
+## Trained models/## Main Results
 Train on CHALL_H80K train, evaluate on CHALL_H80K val.
 
-|Model        |d2   |  MPJPE(mm)  | Caffe Model  |
+|d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
 |:-:|:-:|:-:|:-:|
-|SE-BN-Inception| 64 |  | [GoogleDrive](https://drive.google.com/file/d/0BwHV3BlNKkWlTWRRbDZYbVB2WWc/view?usp=sharing) | 
+| 64 |  | [GoogleDrive](https://drive.google.com/file/d/13-rF6drfrEyuiF4u-UtqycbLm6Msc8RP/view?usp=sharing) | [GoogleDrive](https://drive.google.com/file/d/1t7pkS88-8IqUAxIYcbUKROfFTrPnhLfr/view?usp=sharing) |
 
 
 
