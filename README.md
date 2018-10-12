@@ -25,16 +25,17 @@ See Guideline.pdf for detailed description.
 
 ----
 ## Data
-- Google drive link is
+- Download preprocessed data at ... See "Data" section in Guideline.pdf.
+- Download pretrained model and snapshots at ...
 
 ----
 ## Quick test 
-- I implemented a random index generation layer for fast testing. See screenshot "figs/rand_test_d64.png" "figs/rand_test_d32.png" "figs/rand_test_d16.png" for details.
+- I implemented a random index generation layer for fast testing. See screenshot "figs/test_d64_rand.png" "figs/test_d32_rand.png" "figs/test_d16_rand.png" for details.
   ```
   cd testing
   caffe test -model test_d64_rand.prototxt -weights models/net_iter_720929.caffemodel -iterations 500
   ```
-  This will give you an unstable number around 68-69 mm since only 1000 samples are tested. (figs/rand_test_d64.png)
+  This will give you figs/rand_test_d64.png (unstable number around 69 mm due to small number of samples)
   
   ```
   caffe test -model test_d32_rand.prototxt -weights models/net_iter_640000.caffemodel -iterations 500
