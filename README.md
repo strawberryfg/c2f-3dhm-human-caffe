@@ -1,5 +1,5 @@
 # c2f-3dhm-human-caffe
-This is the caffe reimplementation of "Coarse-to-Fine Volumetric Prediction for Single-Image 3D Human Pose".
+This is the caffe reimplementation of "Coarse-to-Fine Volumetric Prediction for Single-Image 3D Human Pose". (\emph{citation})
 
 Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64).
 
@@ -63,6 +63,7 @@ For full evaluation on H36M test set
  
 - **d = 64**
   ```
+  cd testing
   caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_720929.caffemodel -iterations 183000
   ```
   This will give you mm (figs/test_d64_full.png)
@@ -84,3 +85,10 @@ For full evaluation on H36M test set
 ## Training
 
 Training is a bit tricky. Here's the thing:
+
+- We start with **d = 2** to warm up. Simply run 
+  ```
+  cd training 
+  caffe train --solver=solver_d2.prototxt 
+  ```
+  I trained from scratch w/o MPII 2D HM pretraining, with 2.5e-5 as base_lr and RMSProp. 2 GPUs are used unless otherwise specified.
