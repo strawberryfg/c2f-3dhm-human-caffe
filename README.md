@@ -126,18 +126,22 @@ Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's th
 This sounds pretty sketchy, right? Another way to train this is simply train d1=1,d2=64 from scratch. Details:
 \emph{missing, TO DO}
 
-### Note:
+### Notes:
 
 - I set global stats to false during inference due to small batch size, cause otherwise you would get a totally different MPJPE number. I cannot recall the paper that mentions it. Let me find the paper.
 
-- The major difference between prototxt is 
+- The major differences between prototxts are
 
-   **a)** depth dimension param (Use sublime or notepad++ to search keywords "depth_dims")
+   **a)** depth dimension param (Use sublime or notepad++ to search keywords **"depth_dims"**)
    
-   **b)** 3d heatmap slicing layer. (Simply search "cube_")
+   **b)** 3d heatmap slicing layer. (Simply search **"cube_"**)
    
-   **c)** 3d heatmap reshaping layer ("heatmap2_flat_scale")
+   **c)** 3d heatmap reshaping layer (**"heatmap2_flat_scale"**)
    
    **d)** loss ratio of 3d heatmap and 2d heatmap. Basic rule is magnitude of these two losses should be the same.
    
    **e)** different weight initialization of last conv layer for 3d heatmap.
+   
+- I only use L2 loss during training. Nevertheless I have smooth L1 loss, adaptive loss, and integral loss in prototxt, as can be seen in figs/*.png. Adaptive loss tries to automatically balance weight magnitude of different euclidean regression loss. See pdf for details about integral loss.
+
+- MPJPE error of argmax operation is **"error(mm)_3d_s2_max"**.
