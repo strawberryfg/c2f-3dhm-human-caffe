@@ -15,10 +15,20 @@ Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64)
 - 12 GB TITAN Card / 8 GB GTX 1070 (if you want to run on Alienware PC😏)
 
 ----
+## Data
+- Google drive link is
+
+----
 ## Quick test 
-- I implemented a random index generation layer for fast testing.
+- I implemented a random index generation layer for fast testing. See screenshot "figs/rand_test_d64.png" "figs/rand_test_d32.png" "figs/rand_test_d16.png" for details.
   ```
   cd testing
-  caffe test -model test_d64.prototxt -weights net_iter_720929.caffemodel -iterations 500
+  caffe test -model test_d64_rand.prototxt -weights models/net_iter_720929.caffemodel -iterations 500
   ```
-  This will give you an unstable number around 68-69 mm since only 1000 samples are tested.  
+  This will give you an unstable number around 68-69 mm since only 1000 samples are tested. (figs/rand_test_d64.png)
+  d=32: test_d32_rand.prototxt models / net_iter_640000.caffemodel 
+  d=16: test_d16_rand.prototxt models / net_iter_560000.caffemdoel
+  
+----
+## Full test 
+- For full evaluation on H36M test set
