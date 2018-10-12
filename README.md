@@ -23,7 +23,7 @@ See Guideline.pdf for detailed description.
 ## Environment
 - Ubuntu / Windows
 
-For Ubuntu, I use two 12 GB TITAN Xp. For Windows, I use one 8 GB GTX 1070 on Alienware PC.
+For Ubuntu, I use two 12 GB TITAN Xp. For Windows, I use one 8 GB GTX 1070 on Alienware PC. 
 
 ----
 ## Data
