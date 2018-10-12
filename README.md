@@ -11,11 +11,11 @@ Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64)
 
 ----
 ## Overview
-2-stage Hourglass (d1 = 1, d2 = 16/32/64)
+2-stage Hourglass (d1 = 1, d2 = 16/32/64) w/ batch size = 3 🌝 🌚 😈
 
-Exquisite ResNet w/ integral coming up soon. 
+Exquisite ResNet w/ integral coming up soon.  💪
 
-Batch size = 1 w/ group normalization trained on windows caffe coming up soon.
+Batch size = 1 w/ group normalization trained on windows caffe coming up soon. 💩
 
 See Guideline.pdf for detailed description.
 
