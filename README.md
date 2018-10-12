@@ -40,14 +40,19 @@ See Guideline.pdf for detailed description.
   ```
   caffe test -model test_d32_rand.prototxt -weights models/net_iter_640000.caffemodel -iterations 500
   ```
-  This will give you figs/rand_test_d32.png
+  This will give you figs/rand_test_d32.png (unstable number around 71 mm)
   
   ```
   caffe test -model test_d16_rand.prototxt -weights models/net_iter_560000.caffemodel -iterations 500
   ```
-  This will give you figs/rand_test_d16.png
+  This will give you figs/rand_test_d16.png (unstable number around 68 mm)
   
   
 ----
 ## Full test 
 - For full evaluation on H36M test set
+- d=16
+  ```
+  caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_560000.caffemodel -iterations 183000
+  ```
+  This will give you 73.6 mm (figs/test_d16_full.png)
