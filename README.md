@@ -1,13 +1,13 @@
 # c2f-3dhm-human-caffe
 This is the caffe reimplementation of "Coarse-to-Fine Volumetric Prediction for Single-Image 3D Human Pose".
 
-Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64) 
+Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64).
 
 ----
 ## Overture
-- I write C++ faster than Python
-- I write faster C++ than Python
-- I know C++ / Caffe is not easy to understand
+- I write C++ faster than Python.
+- I write faster C++ than Python.
+- I know C++ / Caffe is not easy to understand.
 
 
 ----
