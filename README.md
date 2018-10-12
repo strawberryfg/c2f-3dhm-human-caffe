@@ -142,6 +142,6 @@ This sounds pretty sketchy, right? Another way to train this is simply train **d
    
    **e)** different weight initialization of last conv layer for 3d heatmap.
    
-- I only use **L2 loss** during training. Nevertheless I have **smooth L1 loss**, **adaptive loss**, and **integral loss** in prototxt, as can be seen in figs/*.png. Adaptive loss tries to automatically balance weight magnitude of different euclidean regression loss. See pdf for details about integral loss.
+- I only used **L2 loss** during training. Nevertheless I have **smooth L1 loss**, **adaptive loss**, and **integral loss** in prototxt, as can be seen in figs/*.png. Adaptive loss tries to automatically balance weight magnitude of different euclidean regression loss. See pdf for details about integral loss.
 
 - MPJPE error of **argmax** operation is **"error(mm)_3d_s2_max"**.
