@@ -57,7 +57,7 @@ See Guideline.pdf for detailed description.
   ```
   caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_560000.caffemodel -iterations 183000
   ```
-  This will give you 73.6 mm (figs/test_d16_full.png)
+  This will give you {\bf 73.6} mm (figs/test_d16_full.png)
   
   d = 32
   ```
