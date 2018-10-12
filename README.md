@@ -126,7 +126,8 @@ Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's th
 This sounds pretty sketchy, right? Another way to train this is simply train d1=1,d2=64 from scratch. Details:
 \emph{missing, TO DO}
 
-**Notes**
+### Note:
+
 **1.** I set global stats to false during inference due to small batch size, cause otherwise you would get a totally different MPJPE number. I cannot recall the paper that mentions it. Let me find the paper.
 **2.** The major difference between prototxt is 
 
