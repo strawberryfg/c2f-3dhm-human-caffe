@@ -6,7 +6,8 @@ Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64)
 ----
 ## Misc
 - I write C++ faster than Python
-- I writer faster C++ than Python
+- I write faster C++ than Python
+- Who cares?
 
 ----
 ## Prerequisites
