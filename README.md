@@ -127,11 +127,15 @@ This sounds pretty sketchy, right? Another way to train this is simply train d1=
 \emph{missing, TO DO}
 
 **Notes**
-1. I set global stats to false during inference due to small batch size, cause otherwise you would get a totally different MPJPE number. I cannot recall the paper that mentions it. Let me find the paper.
-2. The major difference between prototxt is 
+**1.** I set global stats to false during inference due to small batch size, cause otherwise you would get a totally different MPJPE number. I cannot recall the paper that mentions it. Let me find the paper.
+**2.** The major difference between prototxt is 
 
-   a) depth dimension param (Use sublime or notepad++ to search keywords "depth_dims")
+   **a)** depth dimension param (Use sublime or notepad++ to search keywords "depth_dims")
    
-   b) 3d heatmap slicing layer. (Simply search "cube_")
+   **b)** 3d heatmap slicing layer. (Simply search "cube_")
    
-   c) 3d heatmap reshaping layer ("heatmap2_flat_scale")
+   **c)** 3d heatmap reshaping layer ("heatmap2_flat_scale")
+   
+   **d)** loss ratio of 3d heatmap and 2d heatmap. Basic rule is magnitude of these two losses should be the same.
+   
+   **e)** different weight initialization of last conv layer for 3d heatmap.
