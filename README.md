@@ -4,6 +4,11 @@ This is the caffe reimplementation of "Coarse-to-Fine Volumetric Prediction for 
 Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64) 
 
 ----
+## Misc
+- I write C++ faster than Python
+- I writer faster C++ than Python
+
+----
 ## Prerequisites
 - Ubuntu / Windows
 - 12 GB TITAN Card / 8 GB GTX 1070 (if you want to run on Alienware PC😏)
