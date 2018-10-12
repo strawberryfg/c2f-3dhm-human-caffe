@@ -26,8 +26,18 @@ Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64)
   caffe test -model test_d64_rand.prototxt -weights models/net_iter_720929.caffemodel -iterations 500
   ```
   This will give you an unstable number around 68-69 mm since only 1000 samples are tested. (figs/rand_test_d64.png)
-  d=32: test_d32_rand.prototxt models / net_iter_640000.caffemodel 
-  d=16: test_d16_rand.prototxt models / net_iter_560000.caffemdoel
+  
+  ```
+  cd testing
+  caffe test -model test_d32_rand.prototxt -weights models/net_iter_640000.caffemodel -iterations 500
+  ```
+  This will give you figs/rand_test_d32.png
+  
+  cd testing
+  caffe test -model test_d16_rand.prototxt -weights models/net_iter_560000.caffemodel -iterations 500
+  ```
+  This will give you figs/rand_test_d16.png
+  
   
 ----
 ## Full test 
