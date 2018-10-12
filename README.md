@@ -3,7 +3,6 @@ This is the caffe reimplementation of "Coarse-to-Fine Volumetric Prediction for 
 
 Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64) 
 
-
 ----
 ## Overture
 - I write C++ faster than Python
@@ -21,9 +20,10 @@ Batch size = 1 w/ group normalization trained on windows caffe coming up soon.
 See Guideline.pdf for detailed description.
 
 ----
-## Prerequisites
+## Environment
 - Ubuntu / Windows
-- 12 GB TITAN Card / 8 GB GTX 1070 (if you want to run on Alienware PC😏)
+
+For Ubuntu, I use 2 12 GB TITAN Xp. For Windows, I use 8 GB GTX 1070 on Alienware.
 
 ----
 ## Data
@@ -77,4 +77,5 @@ For full evaluation on H36M test set
   caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_560000.caffemodel -iterations 183000
   ```
   This will give you **73.6** mm (figs/test_d16_full.png)
-  
+
+## 
