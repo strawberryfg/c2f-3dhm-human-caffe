@@ -37,17 +37,17 @@ See Guideline.pdf for detailed description.
   cd testing
   caffe test -model test_d64_rand.prototxt -weights models/net_iter_720929.caffemodel -iterations 500
   ```
-  This will give you figs/rand_test_d64.png (unstable number around 68 mm due to small number of samples)
+  This will give you figs/rand_test_d64.png (unstable number around **68 mm** due to small number of samples)
   
   ```
   caffe test -model test_d32_rand.prototxt -weights models/net_iter_640000.caffemodel -iterations 500
   ```
-  This will give you figs/rand_test_d32.png (unstable number around 71 mm)
+  This will give you figs/rand_test_d32.png (unstable number around **71 mm**)
   
   ```
   caffe test -model test_d16_rand.prototxt -weights models/net_iter_560000.caffemodel -iterations 500
   ```
-  This will give you figs/rand_test_d16.png (unstable number around 68 mm)
+  This will give you figs/rand_test_d16.png (unstable number around **74 mm**)
   
   
 ----
