@@ -7,6 +7,7 @@ Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64)
 ## Overture
 - I write C++ faster than Python
 - I write faster C++ than Python
+- I know C++ / Caffe is not easy to understand
 
 
 ----
@@ -31,8 +32,10 @@ For Ubuntu, I use two 12 GB TITAN Xp. For Windows, I use one 8 GB GTX 1070 on Al
 - Download pretrained model and snapshots at ...
 
 ----
-## Quick test 
-I implemented a random index generation layer for fast testing. See screenshot "figs/test_d64_rand.png" "figs/test_d32_rand.png" "figs/test_d16_rand.png" for details.
+## Kick off the testing
+As you know, evaluation on the entire dataset takes time. For testing on a random subset, I implemented a random index generation layer. See screenshot "figs/test_d64_rand.png" "figs/test_d32_rand.png" "figs/test_d16_rand.png" for details.
+
+I should claim that this is just for fun, please do not not take it seriously. As you might get, say, **68.2 mm** and **68.4 mm** in two different runs.
 
 - **d = 64**
   ```
