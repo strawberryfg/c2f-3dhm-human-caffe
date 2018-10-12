@@ -73,14 +73,14 @@ For full evaluation on H36M test set
   ```
   caffe test -model test_d32_statsfalse.prototxt -weights models/net_iter_640000.caffemodel -iterations 183000
   ```
-  This will give you mm (figs/test_d32_full.png)
+  This will give you **68.6 mm** (figs/test_d32_full.png)
  
   
 - **d = 16**
   ```
   caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_560000.caffemodel -iterations 183000
   ```
-  This will give you **73.6** mm (figs/test_d16_full.png)
+  This will give you **73.6 mm** (figs/test_d16_full.png)
 
 ## Training
 
