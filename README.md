@@ -86,9 +86,9 @@ For full evaluation on H36M test set
 
 Training is a bit tricky. Here's the thing:
 
-- We start with **d = 2** to warm up. Simply run 
+- I started with **d = 2** to warm up. Simply run 
   ```
   cd training 
   caffe train --solver=solver_d2.prototxt 
   ```
-  I trained from scratch w/o MPII 2D HM pretraining, with 2.5e-5 as base_lr and RMSProp. 2 GPUs are used unless otherwise specified.
+  I trained from scratch w/o MPII 2D HM pretraining, with 2.5e-5 as base_lr and RMSProp. 2 GPUs were used unless otherwise specified.
