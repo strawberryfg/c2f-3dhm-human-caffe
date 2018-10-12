@@ -97,6 +97,6 @@ Training is a bit tricky. Here's the thing:
   ```
   caffe train --solver=solver_d4.prototxt --snapshot=net_iter_XXX.solverstate 
   ```
-  You will get around 137 mm on train, 150 mm on test. For eval on training set, simply uncomment "index_lower_bound: 0" "index_upper_bound: 1559571" of "GenRandIndex" layer.
+  You will get around **137 mm** on train, **150 mm** on test. For eval on training set, simply uncomment **"index_lower_bound: 0" "index_upper_bound: 1559571"** of **"GenRandIndex"** layer.
   
 - 
