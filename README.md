@@ -131,4 +131,5 @@ This sounds pretty sketchy, right? Another way to train this is simply train d1=
 2. The major difference between prototxt is 
 
    a)
+   
    b)
