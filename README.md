@@ -14,7 +14,7 @@ You can find screenshots of eval on test set in figs/ (**d = 16, 32, 64**). (Ran
 ## Your briefing
 2-stage Hourglass (**d1 = 1, d2 = 16/32/64**) w/ **batch size = 3** 🌝 🌚 😈
 
-Exquisite ResNet w/ integral coming up soon.  💪
+Exquisite **ResNet w/ integral** coming up soon.  💪
 
 **Batch size = 1** w/ **group normalization** trained on **windows caffe** coming up soon. 💩
 
@@ -114,7 +114,7 @@ Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's th
   ```
   caffe train --solver=solver_d32.prototxt --snapshot=net_iter_560000.solverstate 
   ```
-  You will get around **39 mm** on train and **71 mm** on test. Loss ratio is 0.03:1.
+  You will get around **39 mm** on train and **71 mm** on test. Loss ratio is **0.03:1**.
   I changed the weight initialization of 3D heatmap to normal distribution with **0.001 std** in place previous 0.01 as I found the MPJPE error did not slump.
   
 - **d = 64** Finetune weights from **d = 32** after net_iter_640000.solverstate 
@@ -123,7 +123,7 @@ Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's th
   ```
   You will get around **37 mm** on train and **68 mm** on test. Loss ratio is **0.03:1**. I again changed weight initialization of 3D heatmap from 0.001 gaussian $\rightarrow$ **0.0003**. 
   
-This sounds pretty sketchy, right? Another way to train this is simply train d1=1,d2=64 from scratch. Details:
+This sounds pretty sketchy, right? Another way to train this is simply train **d1 = 1, d2 = 64** from scratch. Details:
 \emph{missing, TO DO}
 
 ### Notes:
