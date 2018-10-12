@@ -10,6 +10,16 @@ Screenshot of eval on test set can be found in figs/ (d = 16, 32, 64)
 - Who cares?
 
 ----
+## Overview
+2-stage Hourglass 
+
+Exquisite ResNet w/ integral coming up soon. 
+
+2D heatmap ground truth renderer code borrowed from Simple Baseline (\emph{citation missing})
+
+3D heatmap ground truth renderer code closely follows C2F  
+
+----
 ## Prerequisites
 - Ubuntu / Windows
 - 12 GB TITAN Card / 8 GB GTX 1070 (if you want to run on Alienware PC😏)
