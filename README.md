@@ -40,6 +40,8 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 | C2F      | 64 | 69.8 | None | None |
 | Integral | 64 | 68.0 | None | None |
 
+##
+
 \emph{missing citation}
 ----
 ## Kick off the testing
