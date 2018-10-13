@@ -700,7 +700,7 @@ layer {
 ``` 
 
 ## ReadBlobFromFile 
-** read a txt including only one number 112.0 **
+**read a txt including only one number 112.0**
 ```
 ----- Read bbx x1 bbx y1 bbx x2 bbx y2 H36M
 layer {
