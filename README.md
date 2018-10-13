@@ -100,6 +100,52 @@ ${POSE_ROOT}
         |   |   |   |-- ### Softmax normalization on 3d heatmap
         |   |   |   |-- deep_human_model_softmax_hm_layer.cpp 
         |   |   |   |-- ### Softmax normalization on 2d heatmap
+        |   |   |-- Operations
+        |   |   |   |-- adaptive_weight_euc_loss_layer.cpp
+        |   |   |   |-- ### Adaptive weight controlling on different euclidean regression loss
+        |   |   |   |-- add_vector_by_constant_layer.cpp
+        |   |   |   |-- ### Add each element of vector by a scalar 
+        |   |   |   |-- add_vector_by_single_vector_layer.cpp
+        |   |   |   |-- ### Add two vectors element-wisely
+        |   |   |   |-- add_vector_by_constant_layer.cpp
+        |   |   |   |-- ### Add each element of vector by a scalar 
+        |   |   |   |-- cross_validation_random_choose_index_layer.cpp
+        |   |   |   |-- ### Select an index from different training split sources
+        |   |   |   |-- gen_heatmap_all_channels_layer.cpp
+        |   |   |   |-- ### Generate 2d heatmap ground truth. Closely follows Yichen Wei simple baseline & CPM caffe CPMDataLayer
+        |   |   |   |-- gen_rand_index_layer.cpp
+        |   |   |   |-- ### Randomly generate a index for training/testing
+        |   |   |   |-- gen_sequential_index_layer.cpp
+        |   |   |   |-- ### Sequentially generate index for testing
+        |   |   |   |-- gen_unified_data_and_label_layer.cpp
+        |   |   |   |-- ### Generate augmentend training data and label (2D). Adapated from CPMDataLayer  
+        |   |   |   |-- joint_3d_square_root_loss_layer.cpp
+        |   |   |   |-- ### Display average joint error MPJPE (mm)
+        |   |   |   |-- js_regularization_loss_layer.cpp
+        |   |   |   |-- ### Jenson-Shannon regularization loss
+        |   |   |   |-- mul_rgb_layer.cpp
+        |   |   |   |-- ### Scale rgb image by a scalar
+        |   |   |   |-- output_blob_layer.cpp
+        |   |   |   |-- ### Output blob to files for debugging 
+        |   |   |   |-- output_heatmap_one_channel_layer.cpp
+        |   |   |   |-- ### Output heatmap of one specific joint to file
+        |   |   |   |-- read_blob_from_file_indexing_layer.cpp
+        |   |   |   |-- ### Read data from disk w/ file index (id)
+        |   |   |   |-- read_blob_from_file_layer.cpp
+        |   |   |   |-- ### Read blob from a specific file
+        |   |   |   |-- read_image_from_file_name_layer.cpp
+        |   |   |   |-- ### Read image from file path
+        |   |   |   |-- read_image_from_image_path_file_layer.cpp
+        |   |   |   |-- ### Read image from a single file describing path for all images in the set
+        |   |   |   |-- read_image_layer.cpp
+        |   |   |   |-- ### See code
+        |   |   |   |-- read_index_layer.cpp
+        |   |   |   |-- ### Read image index from file
+        |   |   |   |-- scale_vector_layer.cpp
+        |   |   |   |-- ### Multiply vector by a constant scalar
+		
+		
+		
 		
        
 ```
