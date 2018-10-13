@@ -65,6 +65,10 @@ ${POSE_ROOT}
  `-- models
      |   |-- net_iter_560000.caffemodel 
      |   |-- net_iter_560000.caffemodel 
+     |   |-- net_iter_640000.caffemodel 
+     |   |-- net_iter_640000.caffemodel 
+     |   |-- net_iter_720929.caffemodel 
+     |   |-- net_iter_720929.caffemodel 
 ```
 
 ## Trained models
