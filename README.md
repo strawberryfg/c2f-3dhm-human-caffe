@@ -64,14 +64,21 @@ ${POSE_ROOT}
         |   |-- deep_human_model_layers.hpp
         |   |   | ### This includes operations about 2d/3d heatmap /integral / augmentation / local <-> global transformation etc.
         |   |-- h36m.h
-        |   |   | ### This includes definition of joint / part / bone (h36m 32 joints / usable 16 joints / c2f 17 joints etc.)
+        |   |   | ### This includes definitions of joint / part / bone (h36m 32 joints / usable 16 joints / c2f 17 joints etc.)
         |   |-- operations.hpp 
         |   |   | ### This includes operations w.r.t scalar / vector / fetch file / output data.
 `-- |-- src
     `-- |-- caffe
         |   |-- layers
         |   |   |-- DeepHumanModel
-        |   |   |   |--
+        |   |   |   |-- deep_human_model_argmax_2d_hm_layer.cpp 
+        |   |   |   |-- ### This takes argmax operation on 2d heatmap 
+        |   |   |   |-- deep_human_model_convert_2d_layer.cpp 
+        |   |   |   |-- ### h36m provides full 32 joints, of which we only care 16 joints. Conversion from 16x2 <-> 32x2
+        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
+        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
+		
+		
 		
         |   `-- person_keypoints_val2017.json
         |-- person_detection_results
