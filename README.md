@@ -37,13 +37,14 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 | Mine     | 64 |      | [Google Drive (net_iter_720929.caffemodel)](https://drive.google.com/file/d/13-rF6drfrEyuiF4u-UtqycbLm6Msc8RP/view?usp=sharing) | [Google Drive (net_iter_720929.solverstate)](https://drive.google.com/file/d/1t7pkS88-8IqUAxIYcbUKROfFTrPnhLfr/view?usp=sharing) |
 | Mine     | 32 | 68.6 | [Google Drive (net_iter_640000.caffemodel)](https://drive.google.com/file/d/1Q5ztDnossLMKoaZEwTsjdLYvK_BJDTrW/view?usp=sharing) | [Google Drive (net_iter_640000.solverstate)](https://drive.google.com/file/d/1rdxfEOwVngvyBXPSYh_1xPUPlmBOV2hS/view?usp=sharing) |
 | Mine     | 16 | 73.6 | [Google Drive (net_iter_560000.caffemodel)](https://drive.google.com/open?id=1-sUW2vGWtgeZxUqUznSvlsAQW3e6DiQz) | [Google Drive (net_iter_560000.solverstate)](https://drive.google.com/file/d/1XmzV7HuIdMEkeRX-fY0dfXypvxrFyoGB/view?usp=sharing) |
-| C2F [1]     | 64 | 69.8 | None | None |
-| Integral [2] | 64 | 68.0 | None | None |
+| C2F[1]     | 64 | 69.8 | None | None |
+| Integral[2] | 64 | 68.0 | None | None |
 
 [1] Pavlakos, Georgios, et al. "Coarse-to-fine volumetric prediction for single-image 3D human pose." Computer Vision and Pattern Recognition (CVPR), 2017 IEEE Conference on. IEEE, 2017.
 
 [2] Sun, Xiao, et al. "Integral human pose regression." arXiv preprint arXiv:1711.08229 (2017).
 
+Included for reference.
 
 ----
 ## Kick off the testing
