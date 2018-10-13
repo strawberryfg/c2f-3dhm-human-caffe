@@ -70,6 +70,8 @@ ${POSE_ROOT}
 `-- |-- src
     `-- |-- caffe
         |   |-- layers
+        |   |   |-- DeepHumanModel
+        |   |   |   |--
 		
         |   `-- person_keypoints_val2017.json
         |-- person_detection_results
