@@ -54,3 +54,4 @@ namespace caffe {
     INSTANTIATE_CLASS(ReadBlobFromFileLayer);
     REGISTER_LAYER_CLASS(ReadBlobFromFile);
 }
+

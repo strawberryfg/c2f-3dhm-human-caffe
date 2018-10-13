@@ -61,3 +61,4 @@ namespace caffe {
     INSTANTIATE_CLASS(ScaleVectorLayer);
     REGISTER_LAYER_CLASS(ScaleVector);
 }  // namespace caffe
+

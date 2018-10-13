@@ -138,11 +138,19 @@ namespace caffe {
 				for (int i = 0; i < BoneNumPart_h36m; i++)
 				{
 					int Bid = t * JointNumPart_h36m * 2;
-					line(img, Point2d(pred_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][0]] * 2] * skeleton_size_,
+					double gt_u_x = gt_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][0]] * 2];
+					double gt_u_y = gt_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][0]] * 2 + 1];
+					double gt_v_x = gt_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][1]] * 2];
+					double gt_v_y = gt_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][1]] * 2 + 1];
+					if (gt_u_x > 0.0 && gt_u_y < 1.0 && gt_v_x > 0.0 && gt_v_y < 1.0)
+					{
+						line(img, Point2d(pred_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][0]] * 2] * skeleton_size_,
 						pred_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][0]] * 2 + 1] * skeleton_size_),
 						Point2d(pred_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][1]] * 2] * skeleton_size_,
 						pred_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][1]] * 2 + 1] * skeleton_size_),
 						Scalar(color_pred_bone_part_h36m[i][0], color_pred_bone_part_h36m[i][1], color_pred_bone_part_h36m[i][2]), line_width_);
+					}
+					
 					if (show_gt_) line(img, Point2d(gt_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][0]] * 2] * skeleton_size_,
 						gt_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][0]] * 2 + 1] * skeleton_size_),
 						Point2d(gt_2d_data[Bid + index_joint_in_part[bones_part_h36m[i][1]] * 2] * skeleton_size_,
