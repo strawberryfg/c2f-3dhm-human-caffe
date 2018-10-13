@@ -73,7 +73,7 @@ I should claim that this is just for fun, please do not not take it seriously. Y
   
   
 ----
-## Full test 
+## Full testing
 For full evaluation on H36M test set
  
 - **d2 =  64**
