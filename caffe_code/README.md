@@ -183,7 +183,7 @@ layer {
 
 
 ----
-## DeepHumanModelH36MGenPredMono3D
+## DeepHumanModelIntegralVector
 ```
 layer {
   name: "integral_x_cube_0_vaue"
