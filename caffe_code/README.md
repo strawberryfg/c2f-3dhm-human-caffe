@@ -593,3 +593,18 @@ layer {
   }
 }
 ```
+
+## JSRegularizationLoss
+```
+layer {
+  type: "JSRegularizationLoss"
+  bottom: "heatmap"
+  bottom: "label_2dhm"
+  name: "js_1_2dhm"
+  top: "js_1_2dhm"
+  loss_weight: 0.0
+   include {
+    phase: TRAIN
+ }
+}
+```
