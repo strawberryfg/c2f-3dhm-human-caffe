@@ -42,7 +42,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 | camera_all | [camera](https://drive.google.com/open?id=1hIjwJdc6bAaaKgDmUuVbLrRDGW3zIKMa) | intrinsic & extrinsic camera parameters | [camera](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/camera_all/100.txt) |
 | index_range | [ind_range](https://github.com/strawberryfg/c2f-3dhm-human-caffe/tree/master/data/full/index_range) | index range per (subject, action) | |
 | info_all | [basic_info](https://drive.google.com/open?id=1zzK9ysvdMs58gaCGvASLDxj0zXL6qzaM) | video/action name/subaction/camera id/frame id | [basic_info](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/info_all/1000019.txt) |
-| images | [img](https://drive.google.com/open?id=1IwqkZBu4tZBTtNbOJc9Jduxpvcvf68xC) | all the cropped images 224x224 | |
+| images | [img](https://drive.google.com/open?id=1IwqkZBu4tZBTtNbOJc9Jduxpvcvf68xC) | all the cropped images (224x224) | [img](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/images/1000.png) |
 
 ## Trained models
 | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
