@@ -608,3 +608,48 @@ layer {
  }
 }
 ```
+
+
+
+
+
+## MulRGB
+```
+layer {
+ type: "MulRGB"
+ bottom: "image"
+ top: "img_mul"
+ name: "img_mul"
+ mul_rgb_param {
+  mul_factor: 256.0
+ }
+ include {
+   phase: TRAIN
+ }
+}
+
+layer {
+ type: "Flatten"
+ bottom: "img_mul"
+ top: "img_mul_flatten"
+ name: "img_mul_flatten"
+ include {
+   phase: TRAIN
+ }
+}
+
+
+layer {
+ type: "AddVectorByConstant"
+ bottom: "img_mul_flatten"
+ top: "img_mul_flatten_add"
+ name: "img_mul_flatten_add"
+ 
+ add_vector_by_constant_param {
+  add_value: 128.0
+ }
+ include {
+    phase: TRAIN
+ }
+}
+```
