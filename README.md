@@ -29,7 +29,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 ----
 ## Data
 - Download preprocessed data at ... See "Data" section in Guideline.pdf.
-- Download pretrained model and snapshots at ...
+- 
 
 ## Trained models
 | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
@@ -40,9 +40,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 | C2F      | 64 | 69.8 | None | None |
 | Integral | 64 | 68.0 | None | None |
 
-##
 
-\emph{missing citation}
 ----
 ## Kick off the testing
 As you know, evaluation on the entire dataset takes time. For testing on a random subset, I implemented a random index generation layer. See screenshot **"figs/test_d64_rand.png"**, **"figs/test_d32_rand.png"**, **"figs/test_d16_rand.png"** for details.
