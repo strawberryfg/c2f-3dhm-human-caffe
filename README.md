@@ -176,9 +176,9 @@ mkdir Operations
 | Folder Name | Download Link | Description | A Toy Example |
 |:-:|:-:|:-:|:-:|
 | bbx_all_new | [bbx](https://drive.google.com/file/d/1TsPBkrkITMK2Snzb0WcUzOSVz3EIjr1p/view?usp=sharing) | (bbx_x1, bbx_y1, bbx_x2, bbx_y2) | [bbx](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/bbx_all_new/9.txt) |
-| center_x | [center_x] | center_x (constant: 112.0) | [center_x](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/center_x/18.txt) |
-| center_y | [center_y] | center_y (constant: 112.0) | [center_y](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/center_y/13.txt) |
-| scale | [scale] | person image scale (constant: 224.0) | [scale](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/scale/23.txt) |
+| center_x | [center_x](https://drive.google.com/open?id=16iOGkEmoRU93wmHKxGpVjHvZpsVjKXra) | center_x (constant: 112.0) | [center_x](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/center_x/18.txt) |
+| center_y | [center_y](https://drive.google.com/open?id=1Y-GrOKnd6V-KgnP15D7Y_PslqiDu5R40) | center_y (constant: 112.0) | [center_y](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/center_y/13.txt) |
+| scale | [scale](https://drive.google.com/open?id=180JpQjGYdAN6ggoyZoH6ddwC3GxsN_py) | person image scale (constant: 224.0) | [scale](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/scale/23.txt) |
 | gt_joint_2d_raw_new | [gt_2d](https://drive.google.com/open?id=1QTVJI4IntxPer1kx-jzB2PclAQMekhEr) | 2d gt on 224x224 cropped image (32x2) | [gt_2d](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/gt_joint_2d_raw_new/1000.txt) |
 | image_path_file |  | image path for each sample | [img_path_file](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/image_path_file/20.txt) |
 | gt_joint_3d_mono_raw | [gt_3d](https://drive.google.com/open?id=1EI8AKCorNqXPSvt3tjfLWW9YX1WsXSIP) | monocular 3d gt in camera coordiante (32x3) | [gt_3d](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/gt_joint_3d_mono_raw/1000006.txt)|
