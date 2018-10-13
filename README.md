@@ -36,8 +36,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 | center_x | [center_x] | center_x (constant: 112.0) | [center_x](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/center_x/18.txt) |
 | center_y | [center_y] | center_y (constant: 112.0) | [center_y](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/center_y/13.txt) |
 | scale | [scale] | person image scale (constant: 224.0) | [scale](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/scale/23.txt) |
-| gt_joint_2d_raw_new | [gt_2d] | 2d gt on 224x224 cropped image (32x2) | [gt_2d] | https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/gt_joint_2d_raw_new/1000.txt |
-
+| gt_joint_2d_raw_new | [gt_2d] | 2d gt on 224x224 cropped image (32x2) | [gt_2d](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/gt_joint_2d_raw_new/1000.txt) |
 
 
 ## Trained models
