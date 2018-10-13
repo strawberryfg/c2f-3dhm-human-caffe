@@ -174,6 +174,10 @@ mkdir Operations
    
    - *Make sure ID of **LayerParameter** do not conflict with each other.*
 
+6. Compile
+```
+   sudo make all -j128
+```
 
 ----
 ## Data
