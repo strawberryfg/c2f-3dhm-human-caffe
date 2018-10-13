@@ -334,3 +334,15 @@ layer {
   }
 }
 ```
+
+
+## DeepHumanModelSoftmaxHM
+```
+#=========softmax 
+layer {
+  type: "DeepHumanModelSoftmaxHM"
+  bottom: "heatmap2_flat_scale_reshape"
+  top: "heatmap2_softmax"
+  name: "heatmap2_softmax"
+}
+```
