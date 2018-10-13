@@ -479,3 +479,21 @@ layer {
   }
 }
 ```
+
+
+## GenSequentialIndex
+```
+layer {
+  type: "GenSequentialIndex"
+  top: "image_index"
+  gen_sequential_index_param {
+      batch_size: 3
+      current_index_file_path: "cur_id_test_d64_statsfalse.txt"
+      num_of_samples: 548999
+      start_index: 1559572
+  }
+  include {
+      phase: TEST
+  }
+}
+```
