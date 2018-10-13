@@ -38,7 +38,8 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
   - deep_human_model_layers.hpp
   - operations.hpp
 - src
-  - read_blob_from_file_index_layer.cpp
+  - Operations 
+    - read_blob_from_file_index_layer.cpp
 ```
 ----
 ## Data
