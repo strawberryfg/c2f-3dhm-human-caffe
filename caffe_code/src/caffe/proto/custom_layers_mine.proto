@@ -1,0 +1,380 @@
+message LayerParameter {
+  optional AddVectorByConstantParameter add_vector_by_constant_param = 181;
+  optional GenHeatmapAllChannelsParameter gen_heatmap_all_channels_param = 150;
+  optional GenRandIndexParameter gen_rand_index_param = 152;
+  optional GenSequentialIndexParameter gen_sequential_index_param = 153;
+  optional Joint3DSquareRootLossParameter joint_3d_square_root_loss_param = 191;
+  optional JSRegularizationLossParameter js_regularization_loss_param = 155;
+  optional MulRGBParameter mul_rgb_param = 182;  
+  optional ReadBlobFromFileParameter read_blob_from_file_param = 156;
+  optional ReadBlobFromFileIndexingParameter read_blob_from_file_indexing_param = 157;  
+  optional ReadImageParameter read_image_param = 158;
+  optional ReadImageFromFileNameParameter read_image_from_file_name_param = 159;
+  optional ReadImageFromImagePathFileParameter read_image_from_image_path_file_param = 183;
+  optional ReadIndexFromFileParameter read_index_from_file_param = 160;
+  optional OutputBlobParameter output_blob_param = 161;
+  optional OutputHeatmapOneChannelParameter output_heatmap_one_channel_param = 162;
+  optional ScaleVectorParameter scale_vector_param = 164;
+  optional DeepHumanModelConvertDepthParameter convert_depth_param = 200;
+  optional DeepHumanModelGen3DHeatmapInMoreDetailV3Parameter deep_human_model_gen_3d_heatmap_in_more_detail_v3_param = 209; 
+  optional DeepHumanModelH36MGenAug3DParameter gen_aug_3d_param = 199;
+  optional DeepHumanModelH36MGenPredMono3DParameter gen_pred_mono_3d_param = 190;
+  optional DeepHumanModelIntegralVectorParameter deep_human_model_integral_vector_param = 203;
+  optional DeepHumanModelNorm3DHMParameter deep_human_model_norm_3d_hm_param = 204;
+  optional DeepHumanModelNormalizationResponseParameter normalization_response_param = 188;
+  optional DeepHumanModelOutputHeatmapSepChannelParameter deep_human_model_output_heatmap_sep_channel_param = 171;
+  optional DeepHumanModelOutputJointOnSkeletonMapH36MParameter output_joint_on_skeleton_human_h36m_param = 189;
+  optional DeepHumanModelSoftmax3DHMParameter deep_human_model_softmax_3d_hm_param = 201;
+  optional DeepHumanModelH36MChaGenJointFrXYZHeatmapParameter deep_human_model_h36m_cha_gen_joint_fr_xyz_heatmap_param = 202; 
+  optional UniversalParameter universal_param = 206;  
+}
+
+
+
+message TransformationParameter {
+  // For data pre-processing, we can do simple scaling and subtracting the
+  // data mean, if provided. Note that the mean subtraction is always carried
+  // out before scaling.
+  optional float scale = 1 [default = 1];
+  // Specify if we want to randomly mirror data.
+  optional bool mirror = 2 [default = false];
+  // Specify if we would like to randomly crop an image.
+  optional uint32 crop_size = 3 [default = 0];
+  // mean_file and mean_value cannot be specified at the same time
+  optional string mean_file = 4;
+  // if specified can be repeated once (would subtract it from all the channels)
+  // or can be repeated the same number of times as channels
+  // (would subtract them from the corresponding channel)
+  repeated float mean_value = 5;
+  optional uint32 stride = 6 [default = 4];
+  optional float scale_cvg = 7 [default = 0.5];
+  optional uint32 max_cvg_len = 8 [default = 50];
+  optional uint32 min_cvg_len = 9 [default = 50];
+  optional bool opaque_coverage = 10 [default = true];
+  optional string coverage = 11 [default = "gridbox_max"];
+  optional float flip_prob = 12 [default = 0.5];
+  optional float max_rotate_degree = 13 [default = 5.0];
+  optional bool visualize = 14 [default = false];
+  optional uint32 crop_size_x = 15 [default = 368];
+  optional uint32 crop_size_y = 16 [default = 368];
+  optional float scale_prob = 17 [default = 0.5];
+  optional float scale_min = 18 [default = 0.9];
+  optional float scale_max = 19 [default = 1.1];
+  optional float bbox_norm_factor = 20 [default = 300];
+  optional string img_header = 21 [default = "."];
+  // Force the decoded image to have 3 color channels.
+  optional bool force_color = 22 [default = false];
+  // Force the decoded image to have 1 color channels.
+  optional bool force_gray = 23 [default = false];
+  optional float target_dist = 24 [default = 1.0];
+  optional float center_perterb_max = 25 [default = 10.0];
+  optional float sigma = 26 [default = 7.0];
+  optional float sigma_center = 27 [default = 21.0];
+  optional float clahe_tile_size = 28 [default = 8.0];
+  optional float clahe_clip_limit = 29 [default = 4.0];
+  optional bool do_clahe = 30 [default = false];
+  optional uint32 num_parts = 31 [default = 14];
+  optional uint32 num_total_augs = 32 [default = 82];
+  optional string aug_way = 33 [default = "rand"];
+  optional uint32 gray = 34 [default = 0];
+  optional uint32 np_in_lmdb = 35 [default = 16];
+  optional bool transform_body_joint = 38 [default = true];
+  optional bool put_gaussian = 39 [default = true];
+  optional bool visualize_label = 40 [default = false];
+  optional string file_name_file_prefix = 41 [default = "/home"];
+  optional float minus_pixel_value = 42 [default = 128.0];
+  optional float test_scale = 43 [default = 1.0];
+  optional bool test_is_flip = 44 [default = false];
+}
+
+
+message AddVectorByConstantParameter {
+  optional float add_value = 1 [default = 0.0];
+}
+
+
+
+
+message GenHeatmapAllChannelsParameter {
+  optional uint32 gen_size = 1 [default = 64];
+  optional float render_sigma = 2 [default = 7];
+  optional bool all_one = 3 [default = false];
+  optional uint32 joint_num = 4 [default = 16];
+
+  optional bool use_cpm_render = 5 [default = true];
+  optional uint32 stride = 6 [default = 4];
+  optional uint32 crop_size = 7 [default = 256];
+  optional bool use_baseline_render = 8 [default = false];
+}
+
+
+
+
+message GenRandIndexParameter {
+  optional uint32 index_lower_bound = 1 [ default = 1];
+  optional uint32 index_upper_bound = 2 [ default = 10000];
+  optional uint32 batch_size = 3 [ default = 16];
+  optional string missing_index_file = 4 [default="D:\\"];
+
+  optional uint32 rand_generator_option = 5 [default = 0];
+}
+
+
+message GenSequentialIndexParameter {
+  optional uint32 batch_size = 1 [default = 16];
+  optional string current_index_file_path = 2 [default = "D:\\"];
+  optional uint32 num_of_samples = 3 [default = 1000];
+  optional uint32 start_index = 4 [default = 0];
+  
+}
+
+
+message Joint3DSquareRootLossParameter {
+  optional uint32 joint_num = 1 [default = 16];
+}
+
+
+message JSRegularizationLossParameter {
+  optional float min_eps = 1 [default = 0.000001];
+}
+
+
+
+message MulRGBParameter {
+  optional float mul_factor = 1 [default = 255.0];
+}
+
+
+
+message OutputBlobParameter {
+  optional string save_path = 1 [default = "D:\\"];
+  optional string blob_name = 2 [default = "pred_joint_3d"];
+  
+  optional bool if_per_section_output = 3 [default = false];
+  optional uint32 per_section_row_num = 4 [default = 100];
+  optional uint32 per_section_col_num = 5 [default = 100];
+}
+
+
+
+
+message OutputHeatmapOneChannelParameter {
+  optional string save_path = 1 [default = "D:\\"];
+  optional uint32 save_size = 2 [default = 224 ];
+
+  optional uint32 heatmap_size = 3 [default = 56];
+}
+
+
+
+message ReadBlobFromFileParameter {
+  optional string file_path = 1 [default = "D:\\"];
+  optional uint32 num_to_read = 2 [default = 21];
+  optional uint32 batch_size = 3 [default = 16];
+}
+
+message ReadBlobFromFileIndexingParameter {
+  optional string file_prefix = 1 [default = "D:\\"];
+  optional uint32 num_to_read = 2 [default = 21];
+}
+
+
+message ReadImageParameter {
+  optional string read_path = 1 [default = "D:\\"];
+  optional uint32 resize_size = 2 [default = 224 ];
+  optional uint32 zero_pad = 3 [default = 0];
+
+  optional string image_suffix = 4 [default = ".png"];
+}
+
+message ReadImageFromFileNameParameter {
+  optional uint32 resize_size = 1 [default = 224 ];
+  optional bool pad_square = 2 [default = true];
+  optional uint32 channel_num = 3 [default = 3];
+  optional string file_name_file_prefix = 4 [default = "D:\\"];
+  optional bool pad_to_a_constant_size_before_resize = 5 [default = false];
+  optional uint32 pad_to_constant_size = 6 [default = 800];
+
+}
+
+
+
+
+message ReadImageFromImagePathFileParameter {
+  optional string image_path_file_path = 1 [default = "D:\\"];
+  optional string current_index_file_path = 2 [default = "D:\\"];
+  optional uint32 batch_size = 3 [default = 16];
+  optional uint32 num_of_samples = 4 [default = 100];
+  optional uint32 resize_image_size = 5 [default = 224];
+}
+
+message ReadIndexFromFileParameter {
+  optional string index_file_path = 1 [default = "D:\\"];
+  optional string current_index_file_path = 2 [default = "D:\\"];
+  optional uint32 batch_size = 3 [default = 16];
+  optional uint32 num_of_samples = 4 [default = 100];
+}
+
+message ScaleVectorParameter {  
+  optional float scale_factor = 1 [default = 1.8];    
+}
+
+
+
+
+message UniversalParameter {
+  optional bool perform_back_prop = 1 [default = true];
+  optional bool mul_hyp = 2 [default = false];
+  optional bool sub_root = 3 [default = false];
+  optional uint32 joint_num = 4 [default = 16];
+  optional uint32 root_id = 5 [default = 0];
+  optional float similar_pose_threshold = 6 [default = 3.0];
+}
+
+
+message DeepHumanModelConvertDepthParameter {  
+  optional uint32 joint_num = 1 [default = 16];   
+  optional float depth_lb = 2 [default = -950.637313]; 
+  optional float depth_ub = 3 [default = 892.544664];
+  optional uint32 root_joint_id = 4 [default = 0]; //H36M Hips 
+}
+
+
+
+message DeepHumanModelGen3DHeatmapInMoreDetailV3Parameter {
+
+   optional uint32 depth_dims = 1 [default = 64];
+   optional uint32 map_size = 2 [default = 64];
+   optional uint32 crop_size = 3 [default = 256];
+   optional uint32 render_sigma = 4 [default = 2];
+   optional uint32 stride = 5 [default = 4];
+   optional uint32 joint_num = 6 [default = 16];
+   optional float x_lower_bound = 7 [default = 0.0];
+   optional float x_upper_bound = 8 [default = 1.0];
+   optional float y_lower_bound = 9 [default = 0.0];
+   optional float y_upper_bound = 10 [default = 1.0];
+   optional float z_lower_bound = 11 [default = -1.0];
+   optional float z_upper_bound = 12 [default = 1.0];
+
+   optional uint32 output_res = 13 [default = 64];
+   
+}
+
+
+message DeepHumanModelH36MGenAug3DParameter {  
+  optional uint32 joint_num = 1 [default = 16];   
+  optional string camera_parameters_prefix = 2 [default = "D:\\"];  
+  optional uint32 crop_bbx_size = 3 [default = 256]; //256 default sizae of Hourglass
+}
+
+
+
+
+
+message DeepHumanModelH36MGenPredMono3DParameter {  
+  optional uint32 joint_num = 1 [default = 16];   
+  optional string camera_parameters_prefix = 2 [default = "D:\\"];  
+  
+}
+
+
+
+
+
+message DeepHumanModelIntegralVectorParameter {
+  optional float dim_lb = 1 [default = -1.0];
+  optional float dim_ub = 2 [default = 1.0];
+
+  optional uint32 int_axis = 3 [default = 0];
+  optional uint32 joint_num = 4 [default = 16];
+  optional uint32 int_joint_id = 5 [default = 0];
+}
+
+
+
+
+message DeepHumanModelNorm3DHMParameter {  
+  optional uint32 joint_num = 1 [default = 16];   
+  optional uint32 depth_dims = 2 [default = 64]; 
+  optional float hm_threshold = 3 [default = 0.003]; 
+}
+
+message DeepHumanModelNormalizationResponseParameter {  
+  optional float hm_threshold = 1 [default = 0.0001];  
+}
+
+
+
+message DeepHumanModelOutputHeatmapSepChannelParameter {
+  optional uint32 save_size = 1 [default = 224];
+  optional uint32 heatmap_size = 2 [default = 224];
+  optional string save_path = 3 [default = "D:\\"];
+  optional bool output_joint_0 = 4 [default = true];
+  optional bool output_joint_1 = 5 [default = true];
+  optional bool output_joint_2 = 6 [default = true];
+  optional bool output_joint_3 = 7 [default = true];
+  optional bool output_joint_4 = 8 [default = true];
+  optional bool output_joint_5 = 9 [default = true];
+  optional bool output_joint_6 = 10 [default = true];
+  optional bool output_joint_7 = 11 [default = true];
+  optional bool output_joint_8 = 12 [default = true];
+  optional bool output_joint_9 = 13 [default = true];
+  optional bool output_joint_10 = 14 [default = true];
+  optional bool output_joint_11 = 15 [default = true];
+  optional bool output_joint_12 = 16 [default = true];
+  optional bool output_joint_13 = 17 [default = true];
+  optional bool output_joint_14 = 18 [default = true];
+  optional bool output_joint_15 = 19 [default = true];
+  optional uint32 joint_num = 20 [default = 15];
+}
+
+
+
+
+message DeepHumanModelOutputJointOnSkeletonMapH36MParameter {
+  optional bool use_raw_rgb_image = 1 [default = false];  
+  optional bool show_gt = 2 [default = true];
+  optional string save_path = 3 [default = "/home/wqf/data/pred_skemap/"];
+  optional uint32 save_size = 4 [default = 224 ];  
+  optional string image_source = 5 [default = "/home/wqf/data/pred_skemap/"];
+  optional uint32 skeleton_size = 6 [default = 224];  
+  optional bool show_skeleton = 7 [default = true];
+  
+  optional float circle_radius = 8 [default = -3];
+  optional float line_width = 9 [default = 3];
+  
+  optional bool is_c2f = 10 [default = false];
+}
+
+
+
+
+message DeepHumanModelSoftmax3DHMParameter {  
+  optional uint32 joint_num = 1 [default = 16];   
+  optional uint32 depth_dims = 2 [default = 64];  
+}
+
+
+
+
+message DeepHumanModelH36MChaGenJointFrXYZHeatmapParameter {
+   optional uint32 depth_dims = 1 [default = 101];
+   optional uint32 map_size = 2 [default = 224];
+
+   optional float x_lb = 3 [default = -1.0];
+   optional float x_ub = 4 [default = 1.0];
+   optional float y_lb = 5 [default = -1.0];
+   optional float y_ub = 6 [default = 1.0];
+   optional float z_lb = 7 [default = -1.0];
+   optional float z_ub = 8 [default = 1.0];
+   optional uint32 joint_num = 9 [default = 16];   
+   
+}
+
+
+
+
+
+
+
+
