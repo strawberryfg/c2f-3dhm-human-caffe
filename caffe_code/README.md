@@ -667,3 +667,19 @@ layer {
   }
 }
 ```
+
+
+
+## OutputHeatmapOneChannel
+```
+layer {
+  name: "output_hm_one_channel"
+  type: "OutputHeatmapOneChannel"
+  bottom: "pred_hm_joint_12"
+  bottom: "image_index"
+  output_blob_param {
+     blob_name: "pred_hm"
+     save_path: "pred_hm/12"
+  }
+}
+```
