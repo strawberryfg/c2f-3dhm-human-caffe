@@ -457,9 +457,11 @@ layer {
      phase: TRAIN
   }
 }
+```
 
 **For testing on train, uncomment line 3-4 and comment line 1-2**
 
+```
 #-----randomly generate index for h36m
 layer {
   name: "gen_rand_ind"
