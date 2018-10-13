@@ -8,6 +8,7 @@ You can find screenshots of eval on test set in figs/ (**d2 =  16, 32, 64**). (R
 - I write C++ faster than Python.
 - I write faster C++ than Python.
 - I know C++ / Caffe is not easy to understand.
+- People don't like Netscape Browser or iPhone 4s any more. hmmmmmm
 
 
 ----
