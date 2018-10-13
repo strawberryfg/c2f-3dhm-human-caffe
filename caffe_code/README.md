@@ -3,6 +3,7 @@ This contains usage example of all the layers. For **Input**, **Output**, **Para
 
 You can easily find usage in prototxt by searching layer type keywords in Sublime, Notepad++ or Vim.
 
+To understand 2D heatmap & 3D heatmap ground truth renderer, please refer to [CPM put_gaussian_map](https://github.com/shihenw/caffe/blob/d154e896b48e8fb520cb4b47af8ba10bf9403382/src/caffe/data_transformer.cpp)
 ----
 ## DeepHumanModelArgmaxHM
 
