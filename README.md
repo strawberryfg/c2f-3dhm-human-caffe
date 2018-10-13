@@ -66,12 +66,17 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 ${POSE_ROOT}
  `-- data
      `-- full
-         |   |-- net_iter_560000.caffemodel 
-         |   |-- net_iter_560000.solverstate
-         |   |-- net_iter_640000.caffemodel 
-         |   |-- net_iter_640000.solverstate 
-         |   |-- net_iter_720929.caffemodel 
-         |   |-- net_iter_720929.solverstate
+         |   |-- bbx_all_new
+         |   |-- center_x
+         |   |-- center_y
+         |   |-- scale
+         |   |-- gt_joint_2d_raw_new
+         |   |-- gt_joint_3d_mono_raw
+		 |   |-- image_path_file 
+		 |   |-- camera_all
+		 |   |-- index_range 
+		 |   |-- info_all 
+		 |   |-- images
 ```
 
 ## Trained models
