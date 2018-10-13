@@ -418,3 +418,24 @@ layer {
 }
 ```
 
+
+## GenHeatmapAllChannels
+```
+#=======generate 2d heatmap ground truth
+layer {
+  type: "GenHeatmapAllChannels"
+  bottom: "crop_gt_joint_2d"
+  top: "label_2dhm"
+  name: "label_2dhm"
+  gen_heatmap_all_channels_param {
+       gen_size: 64
+       all_one: false
+       joint_num: 16
+       use_baseline_render: true
+       use_cpm_render: false
+       stride: 4
+       render_sigma: 2
+  }
+}
+```
+
