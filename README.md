@@ -157,16 +157,18 @@ ${POSE_ROOT}
        
 ```
 
-3. Copy ${POSE_ROOT}/caffe_code/include/caffe/* to ${CAFFE_ROOT}/include/caffe/
+3. Copy ```${POSE_ROOT}/caffe_code/include/caffe/*``` to ```${CAFFE_ROOT}/include/caffe/```
 
-4. Copy ${POSE_ROOT}/caffe_code/src/caffe/layers/* to ${CAFFE_ROOT}/src/caffe/layers/ after running the following
+4. Copy ```${POSE_ROOT}/caffe_code/src/caffe/layers/*``` to ```${CAFFE_ROOT}/src/caffe/layers/``` after running the following
 ```
 cd ${CAFFE_ROOT}src/caffe/layers
 mkdir DeepHumanModel
 mkdir Operations
 ```
 
-5. Add contents in **LayerParameter** of ${POSE_ROOT}/caffe_code/src/caffe/proto/custom_layers_mine.proto to ${CAFFE_ROOT}/src/caffe/proto/caffe.proto
+5. - Add contents in **LayerParameter** of ```${POSE_ROOT}/caffe_code/src/caffe/proto/custom_layers_mine.proto``` to ```${CAFFE_ROOT}/src/caffe/proto/caffe.proto```
+
+   - Add
 
 
 ----
