@@ -277,3 +277,24 @@ layer {
   name: "pred_joint_2d_s1_int"
 }
 ```
+
+
+
+
+## DeepHumanModelOutputHeatmapSepChannel
+```
+#===================now output separate channel 2d heatmap
+layer {
+  type: "DeepHumanModelOutputHeatmapSepChannel"
+  bottom: "heatmap_2d"
+  bottom: "image_index"
+  name: "output_2d_hm"
+  deep_human_model_output_heatmap_sep_channel_param {
+      joint_num: 16
+      save_size: 224
+	  heatmap_size: 64
+	  save_path: "pred_hm/"
+	  output_joint_7: false
+  }
+}
+```
