@@ -86,6 +86,20 @@ ${POSE_ROOT}
         |   |   |   |-- ### Integral along Y axis
         |   |   |   |-- deep_human_model_integral_z_layer.cpp 
         |   |   |   |-- ### Integral along Z axis
+        |   |   |   |-- deep_human_model_norm_3d_hm_layer.cpp 
+        |   |   |   |-- ### Normalize 3D heatmap responses to make them sum up to 1.0
+        |   |   |   |-- deep_human_model_normalization_response_v0_layer.cpp 
+        |   |   |   |-- ### 2D heatmap normalization
+        |   |   |   |-- deep_human_model_numerical_coordinate_regression_layer.cpp 
+        |   |   |   |-- ### Integral over normalized 2D heatmap -> (x, y)
+        |   |   |   |-- deep_human_model_output_heatmap_sep_channel_layer.cpp 
+        |   |   |   |-- ### Output heatmap of different joints to different folders
+        |   |   |   |-- deep_human_model_output_joint_on_skeleton_map_h36m_layer.cpp 
+        |   |   |   |-- ### Plot predicted joints on raw image
+        |   |   |   |-- deep_human_model_softmax_3d_hm_layer.cpp 
+        |   |   |   |-- ### Softmax normalization on 3d heatmap
+        |   |   |   |-- deep_human_model_softmax_hm_layer.cpp 
+        |   |   |   |-- ### Softmax normalization on 2d heatmap
 		
        
 ```
