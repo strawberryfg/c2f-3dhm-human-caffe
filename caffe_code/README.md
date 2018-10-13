@@ -197,7 +197,7 @@ layer {
 }
 ```
 
-# DeepHumanModelIntegralX
+## DeepHumanModelIntegralX
 ```
 #----integral x cube_5
 layer {
@@ -209,7 +209,7 @@ layer {
 ```
 
 
-# DeepHumanModelIntegralY
+## DeepHumanModelIntegralY
 ```
 #----integral y cube_10
 layer {
@@ -221,7 +221,7 @@ layer {
 ```
 
 
-# DeepHumanModelIntegralZ
+## DeepHumanModelIntegralZ
 ```
 #----integral z cube_14
 layer {
