@@ -176,6 +176,8 @@ This sounds pretty sketchy, right? Another way to train this is simply train **d
 
 ## Windows 
 
+Don't excoriate windows. Mac, ubuntu, windows are all excellent operating systems.
+
 Start cmd.exe run 
   ```
   caffe train .... 
