@@ -299,7 +299,7 @@ layer {
 }
 ```
 
-## DeepHumanModelOutputHeatmapSepChannel
+## DeepHumanModelOutputJointOnSkeletonMapH36M
 ```
 layer {
   type: "DeepHumanModelOutputJointOnSkeletonMapH36M"
