@@ -24,11 +24,11 @@ See Guideline.pdf for detailed description.
 ## Environment
 - Ubuntu / Windows
 
-For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 1070** on Alienware PC. 
+For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 1070** on **Alienware PC**. 
 
 ----
 ## Data
-- See "Data" section in Guideline.pdf for joint definition. (Full 32 vs usable 16)
+- See "Data" section in Guideline.pdf for joint definition. (full 32 vs usable 16)
 
 | Folder Name | Download Link | Description | A Toy Example |
 |:-:|:-:|:-:|:-:|
@@ -38,7 +38,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 | scale | [scale] | person image scale (constant: 224.0) | [scale](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/scale/23.txt) |
 | gt_joint_2d_raw_new | [gt_2d] | 2d gt on 224x224 cropped image (32x2) | [gt_2d](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/gt_joint_2d_raw_new/1000.txt) |
 | image_path_file |  | image path for each sample | [img_path_file](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/image_path_file/20.txt) |
-| gt_joint_3d_mono_raw | [gt_3d](https://drive.google.com/open?id=1EI8AKCorNqXPSvt3tjfLWW9YX1WsXSIP) | monocular 3d gt in camera coordiante (32x3) | [gt_3d]()|
+| gt_joint_3d_mono_raw | [gt_3d](https://drive.google.com/open?id=1EI8AKCorNqXPSvt3tjfLWW9YX1WsXSIP) | monocular 3d gt in camera coordiante (32x3) | [gt_3d](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/gt_joint_3d_mono_raw/1000006.txt)|
 
 
 ## Trained models
@@ -155,7 +155,7 @@ This sounds pretty sketchy, right? Another way to train this is simply train **d
 
 - I set **use_global_stats** to **false** during inference due to small batch size, otherwise you would get a totally different MPJPE number. I cannot recall the paper that mentioned it. Let me find the paper.
 
-- The major differences between prototxts are
+- The major differences between prototxts lies in:
 
    **a)** depth dimension param (Use sublime or notepad++ to search keywords **"depth_dims"**)
    
