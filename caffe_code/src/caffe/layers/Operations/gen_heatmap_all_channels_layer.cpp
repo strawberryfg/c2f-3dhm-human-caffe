@@ -57,11 +57,11 @@ namespace caffe {
 			int Tid = t * joint_num_ * gen_size_ * gen_size_;
 			if (!use_cpm_render_ && !use_baseline_render_)
 			{
-				for (int row = 0; row < gen_size_; row++)
+				for (int row = 0; row < gen_size_; row++) 
 				{
-					for (int col = 0; col < gen_size_; col++)
+					for (int col = 0; col < gen_size_; col++) 
 					{
-						for (int channel = 0; channel < joint_num_; channel++)
+						for (int channel = 0; channel < joint_num_; channel++) 
 						{
 							float gt_x = bottom_data[Bid + channel * 2], gt_y = bottom_data[Bid + channel * 2 + 1];
 							float t = exp(-1.0 / (2.0 * (render_sigma_ * render_sigma_)) * (pow(col / float(gen_size_) - gt_x, 2) + pow(row / float(gen_size_) - gt_y, 2)));
@@ -99,30 +99,30 @@ namespace caffe {
 					}
 				}
 				float start = stride_ / 2.0 - 0.5; //0 if stride = 1, 0.5 if stride = 2, 1.5 if stride = 4, ...
-				for (int g_y = 0; g_y < grid_size_; g_y++)
-				{
-					for (int g_x = 0; g_x < grid_size_; g_x++)
-					{
-						for (int channel = 0; channel < joint_num_; channel++)
-						{
-							float x = start + g_x * stride_;
-							float y = start + g_y * stride_;
-							float center_x = bottom_data[Bid + channel * 2] * crop_size_;
-							float center_y = bottom_data[Bid + channel * 2 + 1] * crop_size_;
+  				for (int g_y = 0; g_y < grid_size_; g_y++)
+  				{
+    				for (int g_x = 0; g_x < grid_size_; g_x++)
+    				{
+    					for (int channel = 0; channel < joint_num_; channel++)
+    					{
+    						float x = start + g_x * stride_;
+      						float y = start + g_y * stride_;
+      						float center_x = bottom_data[Bid + channel * 2] * crop_size_;
+      						float center_y = bottom_data[Bid + channel * 2 + 1] * crop_size_;
 							float d2 = (x - center_x) * (x - center_x) + (y - center_y) * (y - center_y);
 							float exponent = d2 / 2.0 / render_sigma_ / render_sigma_;
-							if (exponent > 4.6052)
-							{ //ln(100) = -ln(1%)
-								continue;
-							}
-							top_data[Tid + channel * gen_size_ * gen_size_ + g_y * gen_size_ + g_x] += exp(-exponent);
-							if (top_data[Tid + channel * gen_size_ * gen_size_ + g_y * gen_size_ + g_x] > 1)
-							{
-								top_data[Tid + channel * gen_size_ * gen_size_ + g_y * gen_size_ + g_x] = 1;
-							}
-						}
-					}
-				}
+      						if(exponent > 4.6052)
+      						{ //ln(100) = -ln(1%)
+        						continue;
+    						}
+      						top_data[Tid + channel * gen_size_ * gen_size_ + g_y * gen_size_ + g_x] += exp(-exponent);
+      						if (top_data[Tid + channel * gen_size_ * gen_size_ + g_y * gen_size_ + g_x] > 1)
+      						{
+      							top_data[Tid + channel * gen_size_ * gen_size_ + g_y * gen_size_ + g_x] = 1;
+      						}
+     					}
+     				}
+     			}
 			}
 			else if (use_baseline_render_)
 			{

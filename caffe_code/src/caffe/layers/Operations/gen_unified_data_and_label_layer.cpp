@@ -2,10 +2,10 @@
 
 //-----opencv part
 #ifdef USE_OPENCV
-#include <opencv2/core/core.hpp>
-#include <opencv2/opencv.hpp>
-#include <opencv2/contrib/contrib.hpp>
-#include <opencv2/highgui/highgui.hpp>
+//#include <opencv2/core/core.hpp>
+//#include <opencv2/opencv.hpp>
+//#include <opencv2/contrib/contrib.hpp>
+//#include <opencv2/highgui/highgui.hpp>
 #endif  // USE_OPENCV
 
 
@@ -29,7 +29,7 @@
 #include "caffe/util/rng.hpp"
 #include "caffe/layer.hpp"
 #include "caffe/operations.hpp"
-#include "h36m.h"
+#include "caffe/h36m.h"
 #include <sstream>
 
 #include "caffe/data_transformer.hpp"
@@ -53,6 +53,8 @@ namespace caffe {
 		crop_y_ = this->layer_param_.transform_param().crop_size_y();
 		joint_num_ = this->layer_param_.transform_param().num_parts();  //note here is num_parts not num_parts + 1
 		file_name_file_prefix_ = this->layer_param_.transform_param().file_name_file_prefix();
+		minus_pixel_value_ = this->layer_param_.transform_param().minus_pixel_value();
+    
 	}
 
 	template <typename Dtype>
@@ -89,6 +91,8 @@ namespace caffe {
 		}
 		float scale_abs = this->layer_param_.transform_param().target_dist() / scale_self;
 		float scale = scale_abs * scale_multiplier;
+
+		//printf("Scale is %12.6f Rows: %d Cols: %d \n", scale, img_src.rows, img_src.cols);
 		resize(img_src, img_temp, Size(), scale, scale, INTER_CUBIC);
 		//modify meta data
 		*objpos_x = (*objpos_x) * scale;
@@ -332,10 +336,21 @@ namespace caffe {
 			FILE *fin_file_name_file = fopen(filenamefile, "r");
 			char file_name[maxlen];
 			fscanf(fin_file_name_file, "%s", file_name);
+			//printf("Reading image %shaha\n", file_name);
 			//the "file name"
 			fclose(fin_file_name_file);
+
+			//Mat ttt = Mat::zeros(256, 256, CV_8UC3);
+			//printf("TTT rows cols %d %d\n", ttt.rows, ttt.cols);
+
+			//ttt = imread("/data/wqf/fs.jpg");
+			//printf("TTT rows cols %d %d\n", ttt.rows, ttt.cols);
+
+
 			Mat img_src = imread(file_name);
-			
+			//printf("Reading image %shaha\n", file_name);
+
+			//printf("Rows and Cols of img_src is %d %d\n", img_src.rows, img_src.cols);
 			//index "the file name" to find the image for reading
 
 			/*Mat img_src = Mat::zeros(crop_y_, crop_x_, CV_8UC3);
@@ -372,9 +387,9 @@ namespace caffe {
 				{
 					Vec3b& rgb = img_aug.at<Vec3b>(row, col);
 					int Tid = t * 3 * offset;
-					transformed_data[Tid + 0 * offset + row * img_aug.cols + col] = (rgb[0] - 128) / 256.0;
-					transformed_data[Tid + 1 * offset + row * img_aug.cols + col] = (rgb[1] - 128) / 256.0;
-					transformed_data[Tid + 2 * offset + row * img_aug.cols + col] = (rgb[2] - 128) / 256.0;
+					transformed_data[Tid + 0 * offset + row * img_aug.cols + col] = (rgb[0] - minus_pixel_value_) / 256.0;
+					transformed_data[Tid + 1 * offset + row * img_aug.cols + col] = (rgb[1] - minus_pixel_value_) / 256.0;
+					transformed_data[Tid + 2 * offset + row * img_aug.cols + col] = (rgb[2] - minus_pixel_value_) / 256.0;
 				}
 			}
 
