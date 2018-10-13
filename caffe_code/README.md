@@ -346,3 +346,20 @@ layer {
   name: "heatmap2_softmax"
 }
 ```
+
+# Operations
+
+## AdaptiveWeightEucLoss
+```
+#======adaptive loss
+layer {
+  name: "ada_loss"
+  type: "AdaptiveWeightEucLoss"
+  top: "ada_loss"
+  bottom: "heatmap_flatten"
+  bottom: "label_2dhm_flatten"
+  bottom: "heatmap2_flatten"
+  bottom: "label_3dhm_flatten"
+  loss_weight: 0.0
+}
+```
