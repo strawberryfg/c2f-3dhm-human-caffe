@@ -1,8 +1,15 @@
 # customized caffe layers
-This contains usage example of all the layers. For **Input** **Output** ** Param**, see pdf.
+This contains usage example of all the layers. For **Input**, **Output**, **Param**, see pdf.
 
-You can find screenshots of eval on test set in figs/ (**d2 =  16, 32, 64**). (Random or full test)
 
 ----
-## Overture
-- 
+## DeepHumanModelArgmaxHM
+
+```
+layer {
+  type: "DeepHumanModelArgmaxHM"
+  bottom: "heatmap"
+  top: "pred_joint_2d_s1_max"
+  name: "pred_joint_2d_s1_max"
+}
+```
