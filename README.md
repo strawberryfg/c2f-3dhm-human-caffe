@@ -47,15 +47,6 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 1. install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe). 
 2. I have developed a myriad of layers. Code structure is
 
-   ```
-   - include 
-     - deep_human_model_layers.hpp
-     - operations.hpp
-   - src
-     - Operations 
-       - read_blob_from_file_index_layer.cpp
-   ```
-   
 ```
 ${POSE_ROOT}
 |-- caffe_code
@@ -78,22 +69,7 @@ ${POSE_ROOT}
         |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
         |   |   |   |-- ### Conversion from 16x3 <-> 32x3
 		
-		
-		
-        |   `-- person_keypoints_val2017.json
-        |-- person_detection_results
-        |   |-- COCO_val2017_detections_AP_H_56_person.json
-        `-- images
-            |-- train2017
-            |   |-- 000000000009.jpg
-            |   |-- 000000000025.jpg
-            |   |-- 000000000030.jpg
-            |   |-- ... 
-            `-- val2017
-                |-- 000000000139.jpg
-                |-- 000000000285.jpg
-                |-- 000000000632.jpg
-                |-- ... 
+       
 ```
 
 
