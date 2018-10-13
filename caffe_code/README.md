@@ -459,7 +459,7 @@ layer {
 }
 ```
 
-**For testing on train, uncomment line 3-4 and comment line 1-2**
+**For testing on train, uncomment line 3-4 and comment line 1-2** in **gen_rand_index_param** section
 
 ```
 #-----randomly generate index for h36m
