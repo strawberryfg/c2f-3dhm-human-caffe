@@ -68,6 +68,18 @@ ${POSE_ROOT}
         |   |   |   |-- ### h36m provides full 32 joints, of which we only care 16 joints. Conversion from 16x2 <-> 32x2
         |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
         |   |   |   |-- ### Conversion from 16x3 <-> 32x3
+        |   |   |   |-- deep_human_model_convert_depth_layer.cpp 
+        |   |   |   |-- ### Conversion from root-relative camera coordinate <-> [-1, 1] normalized depth
+        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
+        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
+        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
+        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
+        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
+        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
+        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
+        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
+        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
+        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
 		
        
 ```
