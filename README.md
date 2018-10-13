@@ -70,16 +70,16 @@ ${POSE_ROOT}
         |   |   |   |-- ### Conversion from 16x3 <-> 32x3
         |   |   |   |-- deep_human_model_convert_depth_layer.cpp 
         |   |   |   |-- ### Conversion from root-relative camera coordinate <-> [-1, 1] normalized depth
-        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
-        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
-        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
-        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
-        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
-        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
-        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
-        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
-        |   |   |   |-- deep_human_model_convert_3d_layer.cpp 
-        |   |   |   |-- ### Conversion from 16x3 <-> 32x3
+        |   |   |   |-- deep_human_model_gen_3d_heatmap_in_more_detail_v3_layer.cpp 
+        |   |   |   |-- ### Generate groud truth for 3d heatmap. Closely follows c2f Torch code.
+        |   |   |   |-- deep_human_model_h36m_cha_gen_joint_fr_xyz_heatmap_layer.cpp 
+        |   |   |   |-- ### Argmax operation on 3d heatmap
+        |   |   |   |-- deep_human_model_h36m_gen_aug_3d_layer.cpp 
+        |   |   |   |-- ### Generate augmented 3d ground truth according to augmented 2d gt and 3d gt
+        |   |   |   |-- deep_human_model_h36m_gen_pred_mono_3d_layer.cpp 
+        |   |   |   |-- ### 2.5D -> 3D camera frame coordinate
+        |   |   |   |-- deep_human_model_integral_vector_layer.cpp 
+        |   |   |   |-- ### \sum_{i=0}^{D-1} probability * position
 		
        
 ```
