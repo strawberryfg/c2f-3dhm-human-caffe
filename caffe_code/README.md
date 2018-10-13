@@ -497,3 +497,84 @@ layer {
   }
 }
 ```
+
+
+
+
+
+## GenUnifiedDataAndLabel
+**The case for training**
+```
+#=======generate unified augmented image and augmented 2d annotation (name gt joint 2d raw H36M all is a bit tricky)
+layer {
+  type: "GenUnifiedDataAndLabel"
+  bottom: "image_index"
+  bottom: "center_x"
+  bottom: "center_y"
+  bottom: "scale_provided"
+  bottom: "gt_joint_2d_raw_H36M"
+  top: "image"
+  top: "crop_gt_joint_2d_scale" 
+
+  transform_param {
+    stride: 4
+    max_rotate_degree: 40.0
+    crop_size_x: 256
+    crop_size_y: 256
+    scale_prob: 1.0
+    scale_min: 0.699999988079
+    scale_max: 1.29999995232
+    #target_dist: 1.17100000381
+    target_dist: 1.0
+    center_perterb_max: 0.0
+    do_clahe: false
+    put_gaussian: false
+    file_name_file_prefix:  "/data/wqf/h36m/mine/Human3.6M/image_path_file/"
+    transform_body_joint: true
+    num_parts: 16
+    minus_pixel_value: 128.0
+  }
+  include {
+    phase: TRAIN
+  }
+}
+```
+
+
+**The case for testing**
+```
+#=======generate unified augmented image and augmented 2d annotation (name gt joint 2d raw H36M all is a bit tricky)
+layer {
+  type: "GenUnifiedDataAndLabel"
+  bottom: "image_index"
+  bottom: "center_x"
+  bottom: "center_y"
+  bottom: "scale_provided"
+  bottom: "gt_joint_2d_raw_H36M"
+  top: "image"
+  top: "crop_gt_joint_2d_scale" 
+
+  transform_param {
+    stride: 4
+    max_rotate_degree: 0.0
+    crop_size_x: 256
+    crop_size_y: 256
+    scale_prob: -1.0
+    flip_prob: -1.0
+    scale_min: 0.699999988079
+    scale_max: 1.29999995232
+    #target_dist: 1.17100000381
+    target_dist: 1.0
+    center_perterb_max: 0.0
+    do_clahe: false
+    put_gaussian: false
+    file_name_file_prefix:  "/data/wqf/h36m/mine/Human3.6M/image_path_file/"
+    transform_body_joint: true
+    num_parts: 16
+    minus_pixel_value: 128.0
+  }
+  include {
+    phase: TEST
+  }
+}
+```
