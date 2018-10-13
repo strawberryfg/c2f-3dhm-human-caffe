@@ -175,9 +175,19 @@ mkdir Operations
    - *Make sure ID of **LayerParameter** do not conflict with each other.*
 
 6. Compile
-```
+   ```
    sudo make all -j128
-```
+   ```
+   
+   **Note 1: ** For ubuntu, you will have to modify header section of **gen_unified_data_and_label_layer.cpp** like this 
+   ```
+   #ifdef USE_OPENCV
+   #include <opencv2/core/core.hpp>
+   //#include <opencv2/opencv.hpp>
+   //#include <opencv2/contrib/contrib.hpp>
+   #include <opencv2/highgui/highgui.hpp>
+   #endif  // USE_OPENCV
+   ```
 
 ----
 ## Data
