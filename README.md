@@ -100,7 +100,14 @@ ${POSE_ROOT}
         |   |   |   |-- ### Softmax normalization on 3d heatmap
         |   |   |   |-- deep_human_model_softmax_hm_layer.cpp 
         |   |   |   |-- ### Softmax normalization on 2d heatmap
+		
+		
+		
         |   |   |-- Operations
+		
+		
+		
+		
         |   |   |   |-- adaptive_weight_euc_loss_layer.cpp
         |   |   |   |-- ### Adaptive weight controlling on different euclidean regression loss
         |   |   |   |-- add_vector_by_constant_layer.cpp
