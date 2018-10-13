@@ -295,9 +295,6 @@ layer {
       heatmap_size: 64
       save_path: "pred_hm/"
       output_joint_7: false
-	  heatmap_size: 64
-	  save_path: "pred_hm/"
-	  output_joint_7: false
   }
 }
 ```
