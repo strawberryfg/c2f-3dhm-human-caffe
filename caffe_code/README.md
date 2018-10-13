@@ -79,3 +79,31 @@ layer {
   }
 }
 ```
+
+
+----
+## DeepHumanModelGen3DHeatmapInMoreDetailV3
+```
+#=====generate 3d heatmap ground truth
+layer {
+  name: "gen_3d_hm"
+  bottom: "annot_depth"
+  bottom: "crop_gt_joint_2d"
+  top: "label_3dhm"
+  type: "DeepHumanModelGen3DHeatmapInMoreDetailV3"
+  deep_human_model_gen_3d_heatmap_in_more_detail_v3_param {
+    depth_dims: 64
+    map_size: 64
+    crop_size: 256
+    stride: 4
+    render_sigma: 2
+    x_lower_bound: 0.0
+    x_upper_bound: 1.0
+    y_lower_bound: 0.0
+    y_upper_bound: 1.0
+    z_lower_bound: 0.0
+    z_upper_bound: 1.0
+    joint_num: 16
+  }
+}
+```
