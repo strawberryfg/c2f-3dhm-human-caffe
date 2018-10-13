@@ -1,6 +1,7 @@
 # customized caffe layers
 This contains usage example of all the layers. For **Input**, **Output**, **Param**, see pdf.
 
+You can easily find usage in prototxt by searching layer type keywords in Sublime, Notepad++ or Vim.
 
 ----
 ## DeepHumanModelArgmaxHM
@@ -26,7 +27,7 @@ layer {
 ```
 
 ----
-## DeepHumanModelConvert3DD
+## DeepHumanModelConvert3D
 ```
 #======= 32 -> 16
 layer {
@@ -34,5 +35,25 @@ layer {
   type: "DeepHumanModelConvert3D"
   bottom: "gt_joint_3d_mono_raw_all"
   top: "gt_joint_3d_mono_raw"
+}
+```
+
+
+----
+## DeepHumanModelConvertDepth
+**3D -> Normalized Depth**
+```
+layer {
+  type: "DeepHumanModelConvertDepth"
+  bottom: "aug_3d"
+  bottom: "gt_joint_3d_mono_raw"
+  top: "annot_depth"
+  name: "annot_depth"
+  convert_depth_param {
+      joint_num: 16
+      depth_lb:  -1005.185902
+      depth_ub:  980.8599
+      root_joint_id: 0
+  }
 }
 ```
