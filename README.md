@@ -28,7 +28,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 
 ----
 ## Installation
-First, install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe)
+First, install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe). Add layers ... (\emph{To do})
 
 ----
 ## Data
