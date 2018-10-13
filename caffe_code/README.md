@@ -515,7 +515,6 @@ layer {
   bottom: "gt_joint_2d_raw_H36M"
   top: "image"
   top: "crop_gt_joint_2d_scale" 
-
   transform_param {
     stride: 4
     max_rotate_degree: 40.0
@@ -553,7 +552,6 @@ layer {
   bottom: "gt_joint_2d_raw_H36M"
   top: "image"
   top: "crop_gt_joint_2d_scale" 
-
   transform_param {
     stride: 4
     max_rotate_degree: 0.0
