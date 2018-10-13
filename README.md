@@ -31,17 +31,16 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 ----
 ## Installation
 1. install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe). 
-
 2. I have developed a myriad of layers. Code structure is
 
-```
-- include 
-  - deep_human_model_layers.hpp
-  - operations.hpp
-- src
-  - Operations 
-    - read_blob_from_file_index_layer.cpp
-```
+   ```
+   - include 
+     - deep_human_model_layers.hpp
+     - operations.hpp
+   - src
+     - Operations 
+       - read_blob_from_file_index_layer.cpp
+   ```
 ----
 ## Data
 - See "Data" section in Guideline.pdf for joint definition. (full 32 vs usable 16)
