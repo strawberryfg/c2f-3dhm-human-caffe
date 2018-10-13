@@ -29,6 +29,20 @@ See Guideline.pdf for detailed description.
 For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 1070** on **Alienware Laptop**. 
 
 ----
+## General Structure
+
+   ```
+   ${POSE_ROOT}
+   +-- caffe_code
+   +-- data
+   +-- figs
+   +-- models
+   +-- training
+   +-- testing
+   +-- README.md
+   ```
+
+----
 ## Installation
 1. install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe). 
 2. I have developed a myriad of layers. Code structure is
