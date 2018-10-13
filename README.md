@@ -40,6 +40,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 | image_path_file |  | image path for each sample | [img_path_file](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/image_path_file/20.txt) |
 | gt_joint_3d_mono_raw | [gt_3d](https://drive.google.com/open?id=1EI8AKCorNqXPSvt3tjfLWW9YX1WsXSIP) | monocular 3d gt in camera coordiante (32x3) | [gt_3d](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/gt_joint_3d_mono_raw/1000006.txt)|
 | camera_all | [camera](https://drive.google.com/open?id=1hIjwJdc6bAaaKgDmUuVbLrRDGW3zIKMa) | intrinsic & extrinsic camera parameters | [camera](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/camera_all/100.txt) |
+| index_range | [ind_range]() | index range per (subject, action) | |
 
 ## Trained models
 | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
