@@ -653,3 +653,17 @@ layer {
  }
 }
 ```
+
+## OutputBlob
+```
+layer {
+  name: "output_annot_depth"
+  type: "OutputBlob"
+  bottom: "crop_gt_joint_2d"
+  bottom: "image_index"
+  output_blob_param {
+     blob_name: "an"
+     save_path: "g/"
+  }
+}
+```
