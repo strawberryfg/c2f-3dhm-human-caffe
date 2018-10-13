@@ -3,7 +3,7 @@ This contains usage example of all the layers. For **Input**, **Output**, **Para
 
 You can easily find usage in prototxt by searching layer type keywords in Sublime, Notepad++ or Vim.
 
-To understand 2D heatmap & 3D heatmap ground truth renderer, please refer to [CPM put_gaussian_map function](https://github.com/shihenw/caffe/blob/d154e896b48e8fb520cb4b47af8ba10bf9403382/src/caffe/data_transformer.cpp), [C2F drawGaussian/drawGaussian3D function](https://github.com/geopavlakos/c2f-vol-train/blob/master/src/util/img.lua)
+To understand 2D heatmap & 3D heatmap ground truth renderer, please refer to [CPM put_gaussian_map function](https://github.com/shihenw/caffe/blob/d154e896b48e8fb520cb4b47af8ba10bf9403382/src/caffe/data_transformer.cpp), [C2F drawGaussian/drawGaussian3D function](https://github.com/geopavlakos/c2f-vol-train/blob/master/src/util/img.lua), [Simple Baseline generate_target function](https://github.com/Microsoft/human-pose-estimation.pytorch/blob/master/lib/dataset/JointsDataset.py)
 
 ----
 ## DeepHumanModelArgmaxHM
