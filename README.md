@@ -114,14 +114,14 @@ For full evaluation on H36M test set
 
 Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's the thing:
 
-- 1. I started with **d2 =  2** to warm up. Simply run 
+ 1. I started with **d2 =  2** to warm up. Simply run 
   ```
   cd training 
   $CAFFE_ROOT/build/tools/caffe train --solver=solver_d2.prototxt 
   ```
   I trained from scratch w/o MPII 2D HM pretraining, with **2.5e-5** as base_lr and **RMSProp**. 2 GPUs were used unless otherwise specified. Weight initialization is gaussian w/ **0.01 std**. Loss ratio of 3d HM to 2d HM is **0.1:1**.
   
-- 2. **d2 =  4** Finetune weights from **d2 =  2** after convergence.
+ 2. **d2 =  4** Finetune weights from **d2 =  2** after convergence.
   ```
   $CAFFE_ROOT/build/tools/caffe train --solver=solver_d4.prototxt --snapshot=net_iter_XXX.solverstate 
   ```
