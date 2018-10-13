@@ -576,3 +576,20 @@ layer {
   }
 }
 ```
+
+
+## Joint3DSquareRootLoss
+```
+#=======MPJPE of s2 integral 3D heatmap
+layer {
+  name: "error(mm)_3d_s2_int"
+  type: "Joint3DSquareRootLoss"
+  bottom: "pred_joint_global_s2_int"
+  bottom: "aug_3d"
+  top: "error(mm)_3d_s2_int"
+  loss_weight: 0.0
+  joint_3d_square_root_loss_param {
+     joint_num: 16
+  }
+}
+```
