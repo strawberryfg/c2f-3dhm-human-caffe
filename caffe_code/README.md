@@ -180,3 +180,19 @@ layer {
   }
 }
 ```
+
+
+----
+## DeepHumanModelH36MGenPredMono3D
+```
+layer {
+  name: "integral_x_cube_0_vaue"
+  type: "DeepHumanModelIntegralVector"
+  bottom: "pred_cube_0_x_vec"
+  top: "pred_cube_0_x"  
+  deep_human_model_integral_vector_param { 
+     dim_lb: 0.0
+   dim_ub: 1.0
+  }
+}
+```
