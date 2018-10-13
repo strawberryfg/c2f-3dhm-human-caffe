@@ -107,3 +107,27 @@ layer {
   }
 }
 ```
+
+----
+## DeepHumanModelH36MChaGenJointFrXYZHeatmap
+```
+#========get argmax on 3D heatmap
+layer {
+  type: "DeepHumanModelH36MChaGenJointFrXYZHeatmap"
+  bottom: "heatmap2"
+  top: "pred_joint_3d_s2_max"
+  name: "pred_joint_3d_s2_max"
+  deep_human_model_h36m_cha_gen_joint_fr_xyz_heatmap_param {
+     depth_dims: 64
+     map_size: 64
+     x_lb: 0.0
+     x_ub: 1.0
+     y_lb: 0.0
+     y_ub: 1.0
+     z_lb: 0.0
+     z_ub: 1.0
+     joint_num: 16
+  }
+}
+```
+
