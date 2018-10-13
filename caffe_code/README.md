@@ -292,6 +292,9 @@ layer {
   deep_human_model_output_heatmap_sep_channel_param {
       joint_num: 16
       save_size: 224
+      heatmap_size: 64
+      save_path: "pred_hm/"
+      output_joint_7: false
 	  heatmap_size: 64
 	  save_path: "pred_hm/"
 	  output_joint_7: false
