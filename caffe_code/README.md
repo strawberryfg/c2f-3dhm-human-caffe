@@ -363,3 +363,17 @@ layer {
   loss_weight: 0.0
 }
 ```
+
+
+## AddVectorByConstant
+```
+layer {
+ type: "AddVectorByConstant"
+ bottom: "img_mul_flatten"
+ top: "img_mul_flatten_add"
+ name: "img_mul_flatten_add"
+ add_vector_by_constant_param {
+    add_value: 128.0
+ }
+}
+```
