@@ -146,7 +146,7 @@ ${POSE_ROOT}
 | [C2F](https://arxiv.org/pdf/1611.07828.pdf)     | 64 | 69.8 | None | None |
 | [Integral](https://arxiv.org/pdf/1711.08229.pdf) | 64 | 68.0 | None | None |
 
-Included for reference.
+[C2F](https://arxiv.org/pdf/1611.07828.pdf) and [Integral](https://arxiv.org/pdf/1711.08229.pdf)  are Included for reference.
 
 
 
