@@ -683,3 +683,18 @@ layer {
   }
 }
 ```
+
+## ReadBlobFromFileIndexing
+```
+#----- Read bbx x1 bbx y1 bbx x2 bbx y2 H36M
+layer {
+  name: "read_bbx_H36M"
+  type: "ReadBlobFromFileIndexing"
+  bottom: "image_index"
+  top: "bbx_H36M"
+  read_blob_from_file_indexing_param {
+     file_prefix: "/data/wqf/h36m/mine/Human3.6M/bbx_all_new/"
+   num_to_read: 4
+  }
+}
+``` 
