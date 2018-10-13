@@ -47,7 +47,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 1. install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe). 
 2. I have developed a myriad of layers. Code structure is
 
-```
+``` shell
 ${POSE_ROOT}
 |-- caffe_code
 `-- |-- include
