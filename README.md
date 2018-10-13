@@ -173,3 +173,11 @@ This sounds pretty sketchy, right? Another way to train this is simply train **d
 - I only used **L2 loss** during training. Nevertheless I have **smooth L1 loss**, **adaptive loss**, and **integral loss** in prototxt, as can be seen in figs/*.png. Adaptive loss tries to automatically balance weight magnitude of different euclidean regression loss. See pdf for details about integral loss.
 
 - MPJPE error of **argmax** operation is **"error(mm)_3d_s2_max"**.
+
+## Windows 
+
+Start cmd.exe run 
+  ```
+  caffe train .... 
+  ```
+Should you have issues installing windows caffe, contact me.
