@@ -155,3 +155,28 @@ layer {
   }
 }
 ```
+
+
+----
+## DeepHumanModelH36MGenPredMono3D
+```
+#======get integraled 3D global (pred 3d mono raw)
+layer {
+  type: "DeepHumanModelH36MGenPredMono3D"
+  bottom: "pred_joint_2d_s2_int"
+  #bottom: "crop_gt_joint_2d"
+  bottom: "pred_depth_s2_int_global"
+  #bottom: "annot_depth"
+  bottom: "bbx_x1_H36M"
+  bottom: "bbx_y1_H36M"
+  bottom: "bbx_x2_H36M"
+  bottom: "bbx_y2_H36M"
+  bottom: "image_index"
+  top: "pred_joint_global_s2_int"
+  name: "pred_joint_global_s2_int"
+  gen_pred_mono_3d_param {
+     joint_num: 16
+     camera_parameters_prefix: "/data/wqf/h36m/mine/Human3.6M/camera_all/"
+  }
+}
+```
