@@ -308,7 +308,6 @@ layer {
   bottom: "pred_joint_2d_s2_int"
   bottom: "crop_gt_joint_2d"
   output_joint_on_skeleton_human_h36m_param {
-  
    use_raw_rgb_image: false
    show_gt: false
    save_path: "s1_max/"
@@ -316,6 +315,22 @@ layer {
    skeleton_size: 256
    show_skeleton: true
    is_c2f: false
+  }
+}
+```
+
+
+## DeepHumanModelSoftmax3DHM
+```
+#===================now integral 3d heatmap
+layer {
+  type: "DeepHumanModelSoftmax3DHM"
+  bottom: "heatmap2_flat_scale_reshape"
+  top: "heatmap2_norm"
+  name: "heatmap2_norm"
+  deep_human_model_softmax_3d_hm_param {
+      joint_num: 16
+      depth_dims: 64
   }
 }
 ```
