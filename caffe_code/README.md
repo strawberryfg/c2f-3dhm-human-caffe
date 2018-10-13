@@ -389,3 +389,32 @@ layer {
 }
 ```
 
+
+
+
+## CrossValidationRandomChooseIndex
+```
+#=======concat index from different data sources for randomly selection
+layer {
+  type: "Concat"
+  bottom: "image_index_h36m"
+  bottom: "image_index_mpii"
+  bottom: "image_index_lsp"
+  top: "image_index_concat"
+  include {
+     phase: TRAIN
+  }
+}
+
+#========randomly choose an index from concatenated vector
+layer {
+  type: "CrossValidationRandomChooseIndex"
+  bottom: "image_index_concat"
+  top: "image_index"
+  name: "image_index"
+  include {
+     phase: TRAIN
+  }
+}
+```
+
