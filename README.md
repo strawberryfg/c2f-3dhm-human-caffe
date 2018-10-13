@@ -60,6 +60,16 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 | images | [img](https://drive.google.com/open?id=1IwqkZBu4tZBTtNbOJc9Jduxpvcvf68xC) | all the cropped images (224x224) | [img](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/images/1000.png) |
 
 #### Download data, place to 
+```
+   ${POSE_ROOT}
+    `-- models
+        |   |-- net_iter_560000.caffemodel 
+		|   |-- net_iter_560000.solverstate 
+		|   |-- net_iter_640000.caffemodel 
+		|   |-- net_iter_640000.solverstate 
+		|   |-- net_iter_720929.caffemodel 
+		|   |-- net_iter_720929.solverstate 
+   ```
 
 ## Trained models
 | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
