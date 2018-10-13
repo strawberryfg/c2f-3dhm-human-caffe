@@ -298,3 +298,24 @@ layer {
   }
 }
 ```
+
+## DeepHumanModelOutputHeatmapSepChannel
+```
+layer {
+  type: "DeepHumanModelOutputJointOnSkeletonMapH36M"
+  bottom: "img_mul_flatten_add"
+  bottom: "image_index"
+  bottom: "pred_joint_2d_s2_int"
+  bottom: "crop_gt_joint_2d"
+  output_joint_on_skeleton_human_h36m_param {
+  
+   use_raw_rgb_image: false
+   show_gt: false
+   save_path: "s1_max/"
+   save_size: 224
+   skeleton_size: 256
+   show_skeleton: true
+   is_c2f: false
+  }
+}
+```
