@@ -377,3 +377,15 @@ layer {
  }
 }
 ```
+
+## AddVectorBySingleVector
+```
+layer {
+ type: "AddVectorBySingleVector"
+ bottom: "vec_a"
+ bottom: "vec_b"
+ top: "vec_aplusb"
+ name: "add_vec_a_vec_b_ele_wise_ly"
+}
+```
+
