@@ -166,7 +166,8 @@ mkdir DeepHumanModel
 mkdir Operations
 ```
 
-5. - Add contents in **LayerParameter** of ```${POSE_ROOT}/caffe_code/src/caffe/proto/custom_layers_mine.proto``` to ```${CAFFE_ROOT}/src/caffe/proto/caffe.proto```
+5. Configure ```caffe.proto```
+   - Add contents in **LayerParameter** of ```${POSE_ROOT}/caffe_code/src/caffe/proto/custom_layers_mine.proto``` to ```${CAFFE_ROOT}/src/caffe/proto/caffe.proto```
 
    - Replace **TransformationParameter** in ```${CAFFE_ROOT}/src/caffe/proto/caffe.proto``` with the one in mine ```${POSE_ROOT}/caffe_code/src/caffe/proto/custom_layers_mine.proto```
    
@@ -188,6 +189,18 @@ mkdir Operations
    #include <opencv2/highgui/highgui.hpp>
    #endif  // USE_OPENCV
    ```
+   
+   **Note 2:** For windows, you will have to modify header section of **gen_unified_data_and_label_layer.cpp** like this 
+   ```
+   #ifdef USE_OPENCV
+   #include <opencv2/core/core.hpp>
+   #include <opencv2/opencv.hpp>
+   #include <opencv2/contrib/contrib.hpp>
+   #include <opencv2/highgui/highgui.hpp>
+   #endif  // USE_OPENCV
+   ```
+   
+Still can't compile? Contact me.
 
 ----
 ## Data
