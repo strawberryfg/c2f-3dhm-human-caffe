@@ -159,7 +159,7 @@ ${POSE_ROOT}
 
 3. Copy ${POSE_ROOT}/caffe_code/include/caffe/* to ${CAFFE_ROOT}/include/caffe/
 
-4. 
+4. Copy ${POSE_ROOT}/caffe_code/src/caffe/layers/* to ${CAFFE_ROOT}/src/caffe/layers/ after running the following
 ```
 cd ${CAFFE_ROOT}src/caffe/layers
 mkdir DeepHumanModel
