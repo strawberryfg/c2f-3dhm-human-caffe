@@ -72,11 +72,11 @@ ${POSE_ROOT}
          |   |-- scale
          |   |-- gt_joint_2d_raw_new
          |   |-- gt_joint_3d_mono_raw
-		 |   |-- image_path_file 
-		 |   |-- camera_all
-		 |   |-- index_range 
-		 |   |-- info_all 
-		 |   |-- images
+         |   |-- image_path_file
+         |   |-- camera_all
+         |   |-- index_range
+         |   |-- info_all
+         |   |-- images
 ```
 
 ## Trained models
