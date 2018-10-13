@@ -698,3 +698,19 @@ layer {
   }
 }
 ``` 
+
+## ReadBlobFromFile 
+** read a txt including only one number 112.0 **
+```
+----- Read bbx x1 bbx y1 bbx x2 bbx y2 H36M
+layer {
+  name: "read_center_x"
+  type: "ReadBlobFromFile"
+  top: "center_x"
+  read_blob_from_file_param {
+     file_prefix: "/data/wqf/h36m/mine/Human3.6M/center_x_112.txt"
+     num_to_read: 1
+	 batch_size: 3
+  }
+}
+```
