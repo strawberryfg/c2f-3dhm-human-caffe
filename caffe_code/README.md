@@ -196,3 +196,38 @@ layer {
   }
 }
 ```
+
+# DeepHumanModelIntegralX
+```
+#----integral x cube_5
+layer {
+  name: "integral_x_cube_5_vec"
+  type: "DeepHumanModelIntegralX"
+  bottom: "pred_cube_5"
+  top: "pred_cube_5_x_vec"  
+}
+```
+
+
+# DeepHumanModelIntegralY
+```
+#----integral y cube_10
+layer {
+  name: "integral_y_cube_10_vec"
+  type: "DeepHumanModelIntegralY"
+  bottom: "pred_cube_10"
+  top: "pred_cube_10_y_vec"  
+}
+```
+
+
+# DeepHumanModelIntegralZ
+```
+#----integral z cube_14
+layer {
+  name: "integral_x_cube_14_vec"
+  type: "DeepHumanModelIntegralZ"
+  bottom: "pred_cube_14"
+  top: "pred_cube_14_z_vec"  
+}
+```
