@@ -22,6 +22,17 @@ layer {
   type: "DeepHumanModelConvert2D"
   bottom: "gt_joint_2d_raw_H36M_all"
   top: "gt_joint_2d_raw_H36M"
- 
+}
+```
+
+----
+## DeepHumanModelConvert3DD
+```
+#======= 32 -> 16
+layer {
+  name: "gt_joint_3d_mono_raw"
+  type: "DeepHumanModelConvert3D"
+  bottom: "gt_joint_3d_mono_raw_all"
+  top: "gt_joint_3d_mono_raw"
 }
 ```
