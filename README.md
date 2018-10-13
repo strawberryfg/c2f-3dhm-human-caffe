@@ -168,7 +168,11 @@ mkdir Operations
 
 5. - Add contents in **LayerParameter** of ```${POSE_ROOT}/caffe_code/src/caffe/proto/custom_layers_mine.proto``` to ```${CAFFE_ROOT}/src/caffe/proto/caffe.proto```
 
-   - Add
+   - Replace **TransformationParameter** in ```${CAFFE_ROOT}/src/caffe/proto/caffe.proto``` with the one in mine ```${POSE_ROOT}/caffe_code/src/caffe/proto/custom_layers_mine.proto```
+   
+   - Add other layer parameter field in mine to ```${CAFFE_ROOT}/src/caffe/proto/caffe.proto``` 
+   
+   - *Make sure ID of **LayerParameter** do not conflict with each other.*
 
 
 ----
