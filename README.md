@@ -80,6 +80,12 @@ ${POSE_ROOT}
         |   |   |   |-- ### 2.5D -> 3D camera frame coordinate
         |   |   |   |-- deep_human_model_integral_vector_layer.cpp 
         |   |   |   |-- ### \sum_{i=0}^{D-1} probability * position
+        |   |   |   |-- deep_human_model_integral_x_layer.cpp 
+        |   |   |   |-- ### Integral along X axis
+        |   |   |   |-- deep_human_model_integral_y_layer.cpp 
+        |   |   |   |-- ### Integral along Y axis
+        |   |   |   |-- deep_human_model_integral_z_layer.cpp 
+        |   |   |   |-- ### Integral along Z axis
 		
        
 ```
