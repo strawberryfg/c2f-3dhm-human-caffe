@@ -28,7 +28,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 
 ----
 ## Data
-- Download preprocessed data at ... See "Data" section in Guideline.pdf.
+- See "Data" section in Guideline.pdf for joint definition. (Full 32 vs usable 16)
 
 | Folder Name | Download Link | Description | A Toy Example |
 |:-:|:-:|:-:|:-:|
