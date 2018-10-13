@@ -239,3 +239,5 @@ Start cmd.exe run
 Should you have issues installing windows caffe, contact me.
 
 # FAQ 
+
+Feel free to contact me at strawberryfgalois@gmail.com if you have **any** problem or suggestion.
