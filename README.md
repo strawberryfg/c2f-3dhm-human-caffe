@@ -58,10 +58,14 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
    
 ```
 ${POSE_ROOT}
-|-- data
-`-- |-- coco
-    `-- |-- annotations
-        |   |-- person_keypoints_train2017.json
+|-- caffe_code
+`-- |-- include
+    `-- |-- caffe
+        |   |-- deep_human_model_layers.hpp
+            |   | ### This includes operations about 2d/3d heatmap /integral etc.
+        |   |-- h36m.h
+            |   | ### This includes definition of joint / part / bone (h36m 32 joints / usable 16 joints / c2f 17 joints etc.)
+		
         |   `-- person_keypoints_val2017.json
         |-- person_detection_results
         |   |-- COCO_val2017_detections_AP_H_56_person.json
