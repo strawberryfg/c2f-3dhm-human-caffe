@@ -265,3 +265,15 @@ layer {
   }  
 }
 ```
+
+
+## DeepHumanModelNumericalCoordinateRegression
+```
+#----numerical regression
+layer {
+  bottom: "heatmap_norm"
+  top: "pred_joint_2d_s1_int"
+  type: "DeepHumanModelNumericalCoordinateRegression"
+  name: "pred_joint_2d_s1_int"
+}
+```
