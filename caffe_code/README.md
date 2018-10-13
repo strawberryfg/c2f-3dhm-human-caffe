@@ -131,3 +131,27 @@ layer {
 }
 ```
 
+
+
+----
+## DeepHumanModelH36MGenAug3D
+```
+#========aug 2D -> aug 3D
+layer {
+  type: "DeepHumanModelH36MGenAug3D"
+  bottom: "crop_gt_joint_2d_scale"
+  bottom: "gt_joint_3d_mono_raw"
+  bottom: "bbx_x1_H36M"
+  bottom: "bbx_y1_H36M"
+  bottom: "bbx_x2_H36M"
+  bottom: "bbx_y2_H36M"
+  bottom: "image_index"
+  top: "aug_3d"
+  name: "aug_3d"
+  gen_aug_3d_param {
+      joint_num: 16
+      camera_parameters_prefix: "/data/wqf/h36m/mine/Human3.6M/camera_all/"
+      crop_bbx_size: 256
+  }
+}
+```
