@@ -166,6 +166,8 @@ mkdir DeepHumanModel
 mkdir Operations
 ```
 
+5. Add contents in **LayerParameter** of ${POSE_ROOT}/caffe_code/src/caffe/proto/custom_layers_mine.proto to ${CAFFE_ROOT}/src/caffe/proto/caffe.proto
+
 
 ----
 ## Data
