@@ -31,7 +31,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 ## Installation
 1. install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe). 
 
-2. Add layers ... (\emph{To do})
+2. I have developed a myriad of layers. Code structure is
 
 ```
 - include 
