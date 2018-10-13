@@ -27,6 +27,10 @@ See Guideline.pdf for detailed description.
 For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 1070** on **Alienware PC**. 
 
 ----
+## Installation
+First, install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe)
+
+----
 ## Data
 - See "Data" section in Guideline.pdf for joint definition. (full 32 vs usable 16)
 
