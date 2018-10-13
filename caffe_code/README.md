@@ -439,3 +439,41 @@ layer {
 }
 ```
 
+
+
+## GenRandIndex
+```
+#-----randomly generate index for h36m
+layer {
+  name: "gen_rand_ind"
+  type: "GenRandIndex"
+  top: "image_index"
+  gen_rand_index_param {
+     index_lower_bound: 0
+     index_upper_bound: 1559571
+     batch_size: 2
+  }
+  include {
+     phase: TRAIN
+  }
+}
+
+**For testing on train, uncomment line 3-4 and comment line 1-2**
+
+#-----randomly generate index for h36m
+layer {
+  name: "gen_rand_ind"
+  type: "GenRandIndex"
+  top: "image_index"
+  gen_rand_index_param {
+     index_lower_bound: 1559572
+     index_upper_bound: 2108570
+     #index_lower_bound: 0
+     #index_upper_bound: 1559571
+     batch_size: 2
+  }
+  include {
+     phase: TEST
+  }
+}
+```
