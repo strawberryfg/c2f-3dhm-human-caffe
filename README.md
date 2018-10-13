@@ -66,12 +66,12 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 ${POSE_ROOT}
  `-- data
      `-- full
-     |   |-- net_iter_560000.caffemodel 
-     |   |-- net_iter_560000.solverstate
-     |   |-- net_iter_640000.caffemodel 
-     |   |-- net_iter_640000.solverstate 
-     |   |-- net_iter_720929.caffemodel 
-     |   |-- net_iter_720929.solverstate
+         |   |-- net_iter_560000.caffemodel 
+         |   |-- net_iter_560000.solverstate
+         |   |-- net_iter_640000.caffemodel 
+         |   |-- net_iter_640000.solverstate 
+         |   |-- net_iter_720929.caffemodel 
+         |   |-- net_iter_720929.solverstate
 ```
 
 ## Trained models
