@@ -62,9 +62,11 @@ ${POSE_ROOT}
 `-- |-- include
     `-- |-- caffe
         |   |-- deep_human_model_layers.hpp
-            |   | ### This includes operations about 2d/3d heatmap /integral etc.
+            |   | ### This includes operations about 2d/3d heatmap /integral / augmentation / local <-> global transformation etc.
         |   |-- h36m.h
             |   | ### This includes definition of joint / part / bone (h36m 32 joints / usable 16 joints / c2f 17 joints etc.)
+        |   |-- operations.hpp 
+            |   | ### This includes operations w.r.t scalar / vector / fetch file / output data.
 		
         |   `-- person_keypoints_val2017.json
         |-- person_detection_results
