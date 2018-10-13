@@ -1,5 +1,5 @@
 # c2f-3dhm-human-caffe
-This is the caffe reimplementation of "Coarse-to-Fine Volumetric Prediction for Single-Image 3D Human Pose". (\emph{citation})
+This is the caffe reimplementation of [Coarse-to-Fine Volumetric Prediction for Single-Image 3D Human Pose](https://arxiv.org/pdf/1611.07828.pdf)
 
 You can find screenshots of eval on test set in figs/ (**d2 =  16, 32, 64**). (Random or full test)
 
