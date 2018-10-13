@@ -79,13 +79,13 @@ ${POSE_ROOT}
          |   |-- images
 ```
 
-#### Train: 
+#### Train Index:
 
-Index ``` 0 - 1559571 ```  
+``` 0 - 1559571 ```  
 
-#### Test: 
+#### Test Index: 
 
-Index ``` 1559572 - 2108570 ```  
+``` 1559572 - 2108570 ```  
 
 ## Trained models
 | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
