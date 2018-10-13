@@ -32,7 +32,7 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 
 | Folder Name | Download Link | Description | A Toy Example |
 |:-:|:-:|:-:|:-:|
-| bbx_all_new | [bbx](https://drive.google.com/file/d/1TsPBkrkITMK2Snzb0WcUzOSVz3EIjr1p/view?usp=sharing) | (bbx_x1, bbx_y1, bbx_x2, bbx_y2) | |
+| bbx_all_new | [bbx](https://drive.google.com/file/d/1TsPBkrkITMK2Snzb0WcUzOSVz3EIjr1p/view?usp=sharing) | (bbx_x1, bbx_y1, bbx_x2, bbx_y2) | [bbx](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/bbx_all_new/9.txt) |
 
 ## Trained models
 | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
