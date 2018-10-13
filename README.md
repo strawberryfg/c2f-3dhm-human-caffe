@@ -154,11 +154,16 @@ ${POSE_ROOT}
         |   |   |   |-- ### Read image index from file
         |   |   |   |-- scale_vector_layer.cpp
         |   |   |   |-- ### Multiply vector by a constant scalar
-		
-		
-		
-		
        
+```
+
+3. Copy ${POSE_ROOT}/caffe_code/include/caffe/* to ${CAFFE_ROOT}/include/caffe/
+
+4. 
+```
+cd ${CAFFE_ROOT}src/caffe/layers
+mkdir DeepHumanModel
+mkdir Operations
 ```
 
 
