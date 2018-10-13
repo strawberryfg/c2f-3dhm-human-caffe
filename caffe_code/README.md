@@ -233,3 +233,20 @@ layer {
   top: "pred_cube_14_z_vec"  
 }
 ```
+
+
+## DeepHumanModelNorm3DHM
+```
+#===================now integral 3d heatmap
+layer {
+  type: "DeepHumanModelNorm3DHM"
+  bottom: "heatmap2_flat_scale_reshape"
+  top: "heatmap2_norm"
+  name: "heatmap2_norm"
+  deep_human_model_norm_3d_hm_param {
+      joint_num: 16
+      depth_dims: 64
+      hm_threshold: 0.003
+  }
+}
+```
