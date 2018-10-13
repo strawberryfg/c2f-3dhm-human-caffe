@@ -1,0 +1,7 @@
+     video_name               D:\tmpwqf\human3.6m\Release-v1.1\S7\Smoking.55011271.mp4
+      action_id                                                                     11
+    action_name                                                                Smoking
+   subaction_id                                                                      2
+      camera_id                                                                      2
+       frame_id                                                                   2048
+     video_name               D:\tmpwqf\human3.6m\Release-v1.1\S7\Smoking.55011271.mp4
