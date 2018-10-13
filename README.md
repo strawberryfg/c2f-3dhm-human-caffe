@@ -179,7 +179,7 @@ mkdir Operations
    sudo make all -j128
    ```
    
-   **Note 1: ** For ubuntu, you will have to modify header section of **gen_unified_data_and_label_layer.cpp** like this 
+   **Note 1:** For ubuntu, you will have to modify header section of **gen_unified_data_and_label_layer.cpp** like this 
    ```
    #ifdef USE_OPENCV
    #include <opencv2/core/core.hpp>
