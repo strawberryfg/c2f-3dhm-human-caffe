@@ -31,7 +31,8 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 1. install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe). 
 
 2. Add layers ... (\emph{To do})
-
+- include
+  - read_blob_from_file_index_layer.cpp
 ----
 ## Data
 - See "Data" section in Guideline.pdf for joint definition. (full 32 vs usable 16)
