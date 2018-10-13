@@ -28,7 +28,9 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 
 ----
 ## Installation
-First, install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe). Add layers ... (\emph{To do})
+1. install `Caffe` from [GNet Caffe repository](https://github.com/Guanghan/GNet-caffe). 
+
+2. Add layers ... (\emph{To do})
 
 ----
 ## Data
@@ -114,20 +116,20 @@ For full evaluation on H36M test set
 
 Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's the thing:
 
- 1. I started with **d2 =  2** to warm up. Simply run 
+- I started with **d2 =  2** to warm up. Simply run 
   ```
   cd training 
   $CAFFE_ROOT/build/tools/caffe train --solver=solver_d2.prototxt 
   ```
   I trained from scratch w/o MPII 2D HM pretraining, with **2.5e-5** as base_lr and **RMSProp**. 2 GPUs were used unless otherwise specified. Weight initialization is gaussian w/ **0.01 std**. Loss ratio of 3d HM to 2d HM is **0.1:1**.
   
- 2. **d2 =  4** Finetune weights from **d2 =  2** after convergence.
+- **d2 =  4** Finetune weights from **d2 =  2** after convergence.
   ```
   $CAFFE_ROOT/build/tools/caffe train --solver=solver_d4.prototxt --snapshot=net_iter_XXX.solverstate 
   ```
   You will get around **137 mm** on train and **150 mm** on test. For eval on training set, simply uncomment **"index_lower_bound: 0" "index_upper_bound: 1559571"** of **"GenRandIndex"** layer. Loss ratio is **0.3:1**.
  
-- 3. **d2 =  8** Finetune weights from **d2 =  4** after convergence.
+- **d2 =  8** Finetune weights from **d2 =  4** after convergence.
   ```
   $CAFFE_ROOT/build/tools/caffe train --solver=solver_d8.prototxt --snapshot=net_iter_XXX.solverstate 
   ```
