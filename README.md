@@ -59,17 +59,6 @@ For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 10
 | info_all | [basic_info](https://drive.google.com/open?id=1zzK9ysvdMs58gaCGvASLDxj0zXL6qzaM) | video/action name/subaction/camera id/frame id | [basic_info](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/info_all/1000019.txt) |
 | images | [img](https://drive.google.com/open?id=1IwqkZBu4tZBTtNbOJc9Jduxpvcvf68xC) | all the cropped images (224x224) | [img](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/toy_example/images/1000.png) |
 
-#### Download data, place to 
-```  
-${POSE_ROOT}
- `-- models
-     |   |-- net_iter_560000.caffemodel 
-     |   |-- net_iter_560000.solverstate
-     |   |-- net_iter_640000.caffemodel 
-     |   |-- net_iter_640000.solverstate 
-     |   |-- net_iter_720929.caffemodel 
-     |   |-- net_iter_720929.solverstate
-```
 
 ## Trained models
 | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
@@ -82,6 +71,19 @@ ${POSE_ROOT}
 
 Included for reference.
 
+
+
+#### Download models, place to 
+```  
+${POSE_ROOT}
+ `-- models
+     |   |-- net_iter_560000.caffemodel 
+     |   |-- net_iter_560000.solverstate
+     |   |-- net_iter_640000.caffemodel 
+     |   |-- net_iter_640000.solverstate 
+     |   |-- net_iter_720929.caffemodel 
+     |   |-- net_iter_720929.solverstate
+```
 ----
 ## Kick off the testing
 As you know, evaluation on the entire dataset takes time. For testing on a random subset, I implemented a random index generation layer. See screenshot **"figs/test_d64_rand.png"**, **"figs/test_d32_rand.png"**, **"figs/test_d16_rand.png"** for details.
