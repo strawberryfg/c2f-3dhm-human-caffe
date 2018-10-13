@@ -250,3 +250,18 @@ layer {
   }
 }
 ```
+
+
+## DeepHumanModelNormalizationResponseV0
+```
+#normalization
+layer {
+  bottom: "heatmap"
+  top: "heatmap_norm"
+  name: "norm_2dhm"
+  type: "DeepHumanModelNormalizationResponseV0"
+  normalization_response_param {
+     hm_threshold: 0.003
+  }  
+}
+```
