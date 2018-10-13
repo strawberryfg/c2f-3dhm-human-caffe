@@ -182,7 +182,7 @@ This sounds pretty sketchy, right? Another way to train this is simply train **d
 
 ## Windows 
 
-#### This is just a test.
+#### This line is just a test.
 
 Don't excoriate windows. Mac, ubuntu, windows are all excellent operating systems.
 
