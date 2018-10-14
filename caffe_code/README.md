@@ -714,3 +714,27 @@ layer {
   }
 }
 ```
+
+
+
+## ReadImageFromFileName
+```
+#----- Read image 
+layer {
+  type: "ReadImageFromFileName"
+  bottom: "image_index"
+  top: "image_read"
+  name: "image_read"
+  read_image_from_file_name_param {
+     resize_size: 224
+	 pad_square: true
+	 channel_num: 3
+	 file_name_file_prefix: "D:\\humanpose\\LIP\\train\\train_id\\"
+	 pad_to_a_constant_size_before_resize: false
+	 pad_to_constant_size: 800
+  }
+  include {
+     phase: TRAIN
+  }
+}
+```
