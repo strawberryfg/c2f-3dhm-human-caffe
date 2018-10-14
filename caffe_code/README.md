@@ -742,7 +742,7 @@ layer {
 
 
 ## ReadImageFromImagePathFile
-**For example, you want to sequentially test 10000 samples of h36m test set"
+**For example, you want to sequentially test 10000 samples of h36m test set**
 ```
 #----- Read image 
 layer {
