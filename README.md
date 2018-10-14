@@ -336,7 +336,7 @@ For full evaluation on H36M test set
 
 ## Training
 
-Training is a bit tricky. For a comprehensive interpretation, see pdf. Here's the thing:
+Training is a bit tricky. For code structure about prototxt, see [prototxt.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/prototxt.pdf). Here's the thing:
 
 - I started with **d2 =  2** to warm up. Simply run 
   ```
