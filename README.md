@@ -27,7 +27,7 @@ About comprehensive readme:
 - [code.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf)
  provides details about custom layers.
 
-- [data.pdf] provides details about data format etc.
+- [data.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/data.pdf) provides details about data format etc.
 
 ----
 ## Environment
@@ -213,7 +213,7 @@ Still can't compile? Contact me.
 ## Data
 - One thing I have realized over the years is that **HDF5**, **LMDB**, **JSON**, **tar.gz**, **pth.tar** or whatever is totally redundant, and suffers from a major downside: it needs to be loaded into memory. For python-based framework e.g. Keras, it is time consuming (sometimes 30 seconds ++) to load offline data. Even for caffe, it takes several seconds. I have thus far switched to a simple and naive data format i.e. **txt**. Each txt represents an annotation for a sample e.g. ground truth 3d, bbx. SSD is required.
 
-- See pdf for a thorough discussion and joint definition. (full 32 joints vs usable 16 joints)
+- See [data.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/data.pdf)  for a thorough discussion and joint definition. (full 32 joints vs usable 16 joints)
 
 | Folder Name | Download Link | Description | A Toy Example |
 |:-:|:-:|:-:|:-:|
