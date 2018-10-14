@@ -1,5 +1,5 @@
 # customized caffe layers
-This contains usage example of all the layers. For **Input**, **Output**, **Param**, see [code.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf).
+This contains usage example of all the custom layers. For **Input**, **Output**, **Param**, see [code.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf).
 
 You can easily find usage in prototxt by searching layer type keywords in Sublime, Notepad++ or Vim.
 

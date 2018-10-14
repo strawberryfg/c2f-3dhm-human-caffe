@@ -21,6 +21,10 @@ Exquisite **ResNet w/ integral** coming up soon.  💪
 **Batch size = 1** w/ **group normalization** trained on **windows caffe** coming up soon. 💩
 
 Caffe Hourglass is imported from [GNet-pose](https://github.com/Guanghan/GNet-pose). Many thanks!
+
+- [code.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf)
+ provides details about custom layers.
+
 See Guideline.pdf for detailed description.
 
 ----
