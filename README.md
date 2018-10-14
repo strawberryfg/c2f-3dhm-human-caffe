@@ -29,6 +29,8 @@ About comprehensive readme:
 
 - [data.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/data/data.pdf) provides details about data format etc.
 
+- [prototxt.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/prototxt.pdf) provides training/testing pipeline about the configuration prototxt file.
+
 ----
 ## Environment
 - Ubuntu / Windows
