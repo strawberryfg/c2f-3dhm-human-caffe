@@ -800,3 +800,19 @@ layer {
    }
 }
 ```
+
+
+
+## ScaleVector
+```
+#=======/ 200.0
+layer {
+  name: "scale_provided"
+  bottom: "scale"
+  top: "scale_provided"
+  type: "ScaleVector"
+  scale_vector_param {
+     scale_factor: 0.005
+  }
+}
+```
