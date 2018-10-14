@@ -761,3 +761,22 @@ layer {
   }
 }
 ```
+
+
+
+## ReadImage
+```
+#----- Read image 
+layer {
+  type: "ReadImage"
+  bottom: "image_index"
+  top: "image_read"
+  name: "image_read"
+  read_image_param {
+     read_path: "h36m/train/"
+     resize_size: 224
+	 zero_pad: 0
+     image_suffix: ".png"
+  }
+}
+```
