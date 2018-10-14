@@ -20,6 +20,7 @@ Exquisite **ResNet w/ integral** coming up soon.  💪
 
 **Batch size = 1** w/ **group normalization** trained on **windows caffe** coming up soon. 💩
 
+Caffe Hourglass is imported from [GNet-pose](https://github.com/Guanghan/GNet-pose). Many thanks!
 See Guideline.pdf for detailed description.
 
 ----
