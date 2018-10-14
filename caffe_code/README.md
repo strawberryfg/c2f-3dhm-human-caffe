@@ -775,7 +775,7 @@ layer {
   read_image_param {
      read_path: "h36m/train/"
      resize_size: 224
-	 zero_pad: 0
+     zero_pad: 0
      image_suffix: ".png"
   }
 }
