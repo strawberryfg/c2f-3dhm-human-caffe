@@ -4,7 +4,7 @@ This is the caffe reimplementation of [Coarse-to-Fine Volumetric Prediction for 
 You can find screenshots of eval on test set in figs/ (**d2 =  16, 32, 64**). (Random or full test)
 
 ----
-## News
+## News under the headline
 - Reaches **67.1** mm MPJPE on entire test set!
 
 ----
