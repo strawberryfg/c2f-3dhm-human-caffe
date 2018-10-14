@@ -738,3 +738,26 @@ layer {
   }
 }
 ```
+
+
+
+## ReadImageFromImagePathFile
+**For example, you want to sequentially test 10000 samples of h36m test set"
+```
+#----- Read image 
+layer {
+  type: "ReadImageFromImagePathFile"
+  top: "image_read"
+  name: "image_read"
+  read_image_from_image_path_file_param {
+     image_path_file_path: "h36m_test_path.txt"
+	 batch_size: 3
+	 current_index_file_path: "cur_test_id.txt"
+	 num_of_samples: 10000
+     resize_image_size: 224
+  }
+  include {
+     phase: TEST
+  }
+}
+```
