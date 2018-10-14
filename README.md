@@ -5,7 +5,7 @@ You can find screenshots of eval on test set in figs/ (**d2 =  16, 32, 64**). (R
 
 ----
 ## News
-- Reaches **67.1** mm on entire test set!
+- Reaches **67.1** mm MPJPE on entire test set!
 
 ----
 ## Overture
