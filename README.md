@@ -22,10 +22,12 @@ Exquisite **ResNet w/ integral** coming up soon.  💪
 
 Caffe Hourglass is imported from [GNet-pose](https://github.com/Guanghan/GNet-pose). Many thanks!
 
+About comprehensive readme:
+
 - [code.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf)
  provides details about custom layers.
 
-See Guideline.pdf for detailed description.
+- [data.pdf] provides details about data format etc.
 
 ----
 ## Environment
@@ -390,7 +392,7 @@ This sounds pretty sketchy, right? Another way to train this is simply train **d
    
    **e)** different weight initialization of last conv layer for 3d heatmap.
    
-- I only used **L2 loss** during training. Nevertheless I have **Jenson-Shannon regularization loss**, **smooth L1 loss**, **adaptive loss**, and **integral loss** in prototxt, as can be seen in figs/*.png. Adaptive loss tries to automatically balance weight magnitude of different euclidean regression loss. See pdf for details about integral loss.
+- I only used **L2 loss** during training. Nevertheless I have **Jenson-Shannon regularization loss**, **smooth L1 loss**, **adaptive loss**, and **integral loss** in prototxt, as can be seen in figs/*.png. Adaptive loss tries to automatically balance weight magnitude of different euclidean regression loss. See [code.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/caffe_code/code.pdf) for details about integral loss.
 
 - MPJPE error of **argmax** operation is **"error(mm)_3d_s2_max"**.
 
