@@ -262,7 +262,7 @@ ${POSE_ROOT}
 ## Trained models
 | Method |d2   |  MPJPE(mm)  | Caffe Model  | Solver State |
 |:-:|:-:|:-:|:-:|:-:|
-| Mine     | 64 |      | [Google Drive (net_iter_720929.caffemodel)](https://drive.google.com/file/d/13-rF6drfrEyuiF4u-UtqycbLm6Msc8RP/view?usp=sharing) | [Google Drive (net_iter_720929.solverstate)](https://drive.google.com/file/d/1t7pkS88-8IqUAxIYcbUKROfFTrPnhLfr/view?usp=sharing) |
+| Mine     | 64 | [67.1]    | [Google Drive (net_iter_720929.caffemodel)](https://drive.google.com/file/d/13-rF6drfrEyuiF4u-UtqycbLm6Msc8RP/view?usp=sharing) | [Google Drive (net_iter_720929.solverstate)](https://drive.google.com/file/d/1t7pkS88-8IqUAxIYcbUKROfFTrPnhLfr/view?usp=sharing) |
 | Mine     | 32 | [68.6](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d32_full.png) | [Google Drive (net_iter_640000.caffemodel)](https://drive.google.com/file/d/1Q5ztDnossLMKoaZEwTsjdLYvK_BJDTrW/view?usp=sharing) | [Google Drive (net_iter_640000.solverstate)](https://drive.google.com/file/d/1rdxfEOwVngvyBXPSYh_1xPUPlmBOV2hS/view?usp=sharing) |
 | Mine     | 16 | [73.6](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/figs/test_d16_full.png) | [Google Drive (net_iter_560000.caffemodel)](https://drive.google.com/open?id=1-sUW2vGWtgeZxUqUznSvlsAQW3e6DiQz) | [Google Drive (net_iter_560000.solverstate)](https://drive.google.com/file/d/1XmzV7HuIdMEkeRX-fY0dfXypvxrFyoGB/view?usp=sharing) |
 | [C2F](https://arxiv.org/pdf/1611.07828.pdf)     | 64 | 69.8 | None | None |
@@ -318,7 +318,7 @@ For full evaluation on H36M test set
   cd testing
   $CAFFE_ROOT/build/tools/caffe test -model test_d16_statsfalse.prototxt -weights models/net_iter_720929.caffemodel -iterations 183000
   ```
-  This will give you mm (**figs/test_d64_full.png**)
+  This will give you **67.1 mm** (**figs/test_d64_full.png**)
 
 
 - **d2 =  32**
