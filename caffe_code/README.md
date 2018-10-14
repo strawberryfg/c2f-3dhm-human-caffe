@@ -780,3 +780,23 @@ layer {
   }
 }
 ```
+
+
+## ReadIndexFromFile
+```
+#----generate random index for test (surreal.val surreal.test ; will make it to h36m finally)
+layer {
+   type: "ReadIndexFromFile"
+   name: "gen_index"
+   top: "image_index"
+   read_index_from_file_param {
+      index_file_path: "/data/wqf/h36msamples/index.txt"      
+      batch_size: 1
+      current_index_file_path: "cur_test_id.txt"
+      num_of_samples: 68
+   }
+   include {
+      phase: TEST
+   }
+}
+```
