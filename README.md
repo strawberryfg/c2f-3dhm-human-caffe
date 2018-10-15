@@ -371,7 +371,7 @@ Training is a bit tricky. For code structure about prototxt, see [prototxt.pdf](
   $CAFFE_ROOT/build/tools/caffe train --solver=solver_d32.prototxt --snapshot=net_iter_560000.solverstate 
   ```
   You will get around **39 mm** on train and **71 mm** on test. Loss ratio is **0.03:1**.
-  I changed the weight initialization of 3D heatmap to normal distribution with **0.001 std** in place previous 0.01 as I found the MPJPE error did not slump.
+  I changed the weight initialization of 3D heatmap to normal distribution with **0.001 std** in place of previous 0.01 as I found the MPJPE did not slump.
   
 - **d2 =  64** Finetune weights from **d2 =  32** after net_iter_640000.solverstate 
   ```
