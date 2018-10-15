@@ -22,8 +22,6 @@ You can find screenshots of eval on test set in figs/ (**d2 =  16, 32, 64**). (R
 
 Exquisite **ResNet w/ integral** coming up soon.  💪
 
-**Batch size = 1** w/ **group normalization** trained on **windows caffe** coming up soon. 💩
-
 Caffe Hourglass is imported from [GNet-pose](https://github.com/Guanghan/GNet-pose). Many thanks!
 
 About comprehensive readme:
