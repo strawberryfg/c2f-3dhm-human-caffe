@@ -37,7 +37,7 @@ About comprehensive readme:
 ## Environment
 - Ubuntu / Windows
 
-For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, I used one **8 GB GTX 1070** on **Alienware Laptop**. 
+For Ubuntu, I used **two 12 GB TITAN Xp**. For Windows, \emph{**TO DO**}
 
 - SSD
 
