@@ -340,10 +340,12 @@ For full evaluation on H36M test set
 
 Training is a bit tricky. For code structure about prototxt, see [prototxt.pdf](https://github.com/strawberryfg/c2f-3dhm-human-caffe/blob/master/prototxt.pdf). Here's the thing:
 
+*Note I started with MPII pretrained caffemodel [improved-hourglass_iter_640000.caffemodel](http://guanghan.info/download/Data/GNet_update.zip) from [GNet](https://github.com/Guanghan/GNet-pose) repo.*
+
 - I started with **d2 =  2** to warm up. Simply run 
   ```
   cd training 
-  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d2.prototxt 
+  $CAFFE_ROOT/build/tools/caffe train --solver=solver_d2.prototxt --weights=improved-hourglass_iter_640000.caffemodel
   ```
   I trained from scratch w/o MPII 2D HM pretraining, with **2.5e-5** as base_lr and **RMSProp**. 2 GPUs were used unless otherwise specified. Weight initialization is gaussian w/ **0.01 std**. Loss ratio of 3d HM to 2d HM is **0.1:1**.
   
