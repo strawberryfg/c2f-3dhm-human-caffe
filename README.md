@@ -347,7 +347,7 @@ Training is a bit tricky. For code structure about prototxt, see [prototxt.pdf](
   cd training 
   $CAFFE_ROOT/build/tools/caffe train --solver=solver_d2.prototxt --weights=improved-hourglass_iter_640000.caffemodel
   ```
-  I trained from scratch w/o MPII 2D HM pretraining, with **2.5e-5** as base_lr and **RMSProp**. 2 GPUs were used unless otherwise specified. Weight initialization is gaussian w/ **0.01 std**. Loss ratio of 3d HM to 2d HM is **0.1:1**.
+  I trained from MPII 2D HM pretrained model, with **2.5e-5** as base_lr and **RMSProp**. 2 GPUs were used unless otherwise specified. Weight initialization is gaussian w/ **0.01 std**. Loss ratio of 3d HM to 2d HM is **0.1:1**.
   
 - **d2 =  4** Finetune weights from **d2 =  2** after convergence.
   ```
